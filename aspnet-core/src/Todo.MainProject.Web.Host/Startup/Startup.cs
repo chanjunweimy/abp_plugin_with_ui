@@ -13,9 +13,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Abp.Extensions;
+using Abp.PlugIns;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Todo.MainProject.Authentication.JwtBearer;
+using Todo.MainProject.Web.Host.Services;
 
 #if FEATURE_SIGNALR
 using Owin;
@@ -33,14 +35,18 @@ namespace Todo.MainProject.Web.Host.Startup
         private const string DefaultCorsPolicyName = "localhost";
 
         private readonly IConfigurationRoot _appConfiguration;
+        private readonly string _contentRootPath;
 
         public Startup(IHostingEnvironment env)
         {
             _appConfiguration = env.GetAppConfiguration();
+            _contentRootPath = env.ContentRootPath;
         }
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            IPluginService pluginService = new PluginService(_contentRootPath + "\\PlugIns");
+
             //MVC
             services.AddMvc(options =>
             {
@@ -62,6 +68,8 @@ namespace Todo.MainProject.Web.Host.Startup
                         .AllowAnyMethod();
                 });
             });
+
+            services.AddSingleton<IPluginService>(pluginService);
 
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
@@ -88,6 +96,12 @@ namespace Todo.MainProject.Web.Host.Startup
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
+
+                var pluginObjects = pluginService.GetPluginObjects();
+                foreach (var pluginObject in pluginObjects)
+                {
+                    options.PlugInSources.AddFolder(pluginObject.Path);
+                }
             });
         }
 

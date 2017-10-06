@@ -10,7 +10,7 @@ namespace Todo.DemoPlugin.Calculation
     /// </summary>
     public class CalculationService : ApplicationService, ICalculationService
     {
-        public int Calculation_Add(int x, int y)
+        public double Calculation_Add(double x, double y)
         {
             return x + y;
         }
