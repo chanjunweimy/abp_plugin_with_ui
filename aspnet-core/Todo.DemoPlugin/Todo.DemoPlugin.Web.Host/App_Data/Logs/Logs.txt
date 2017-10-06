@@ -1,0 +1,1109 @@
+DEBUG 2017-10-06 09:26:09,826 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-10-06 09:26:09,864 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-10-06 09:26:09,881 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.Web.Host.Startup.MainProjectWebHostModule, Todo.MainProject.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,883 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectWebCoreModule, Todo.MainProject.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,884 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectApplicationModule, Todo.MainProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,884 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectCoreModule, Todo.MainProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,884 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,885 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,885 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,885 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,886 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,886 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,886 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,886 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,886 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,887 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:09,889 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-10-06 09:26:09,948 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:26:09,948 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:26:09,948 [2    ] o.Configuration.LanguageManagementConfig - Converted MainProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:26:09,948 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:26:10,241 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Todo.MainProject.EntityFrameworkCore.MainProjectDbContext, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:26:10,623 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-10-06 09:26:10,633 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-10-06 09:26:10,638 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-10-06 09:26:10,640 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: MainProject
+DEBUG 2017-10-06 09:26:10,641 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-10-06 09:26:10,680 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-10-06 09:26:10,726 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-10-06 09:26:10,726 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.CreateUserDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.UserDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.CreateRoleDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.PermissionDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.RoleDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-10-06 09:26:10,729 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.TenantDto
+FATAL 2017-10-06 09:26:26,008 [2    ] Abp.AbpBootstrapper                      - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule.PostInitialize() in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\MainProjectEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 147
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule.PostInitialize() in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\MainProjectEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 147
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+WARN  2017-10-06 09:26:26,015 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 31
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 83
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 74
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 31
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 83
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 74
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+DEBUG 2017-10-06 09:27:53,701 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-10-06 09:27:53,728 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-10-06 09:27:53,744 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.Web.Host.Startup.MainProjectWebHostModule, Todo.MainProject.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,746 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectWebCoreModule, Todo.MainProject.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,746 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectApplicationModule, Todo.MainProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,747 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectCoreModule, Todo.MainProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,747 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,747 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,747 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,748 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,748 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,748 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,749 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,749 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,749 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,749 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:53,752 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-10-06 09:27:53,802 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:27:53,802 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:27:53,802 [2    ] o.Configuration.LanguageManagementConfig - Converted MainProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:27:53,802 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:27:54,037 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Todo.MainProject.EntityFrameworkCore.MainProjectDbContext, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:27:54,414 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-10-06 09:27:54,425 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-10-06 09:27:54,429 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-10-06 09:27:54,433 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: MainProject
+DEBUG 2017-10-06 09:27:54,434 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-10-06 09:27:54,476 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-10-06 09:27:54,521 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-10-06 09:27:54,521 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-10-06 09:27:54,524 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.CreateUserDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.UserDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.CreateRoleDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.PermissionDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.RoleDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-10-06 09:27:54,525 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.TenantDto
+FATAL 2017-10-06 09:28:05,267 [2    ] Abp.AbpBootstrapper                      - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "TodoDatabase" requested by the login. The login failed.
+Login failed for user 'NUMTECH\jw.chan'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule.PostInitialize() in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\MainProjectEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 147
+ClientConnectionId:29fb1c0f-4cf0-428c-9fd7-26d850173fdd
+Error Number:4060,State:1,Class:11
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "TodoDatabase" requested by the login. The login failed.
+Login failed for user 'NUMTECH\jw.chan'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.WithDbContext[TDbContext](IIocResolver iocResolver, Action`1 contextAction) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 39
+   at Todo.MainProject.EntityFrameworkCore.Seed.SeedHelper.SeedHostDb(IIocResolver iocResolver) in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\Seed\SeedHelper.cs:line 17
+   at Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule.PostInitialize() in D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.EntityFrameworkCore\EntityFrameworkCore\MainProjectEntityFrameworkModule.cs:line 46
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.AbpBootstrapper.Initialize() in D:\Github\aspnetboilerplate\src\Abp\AbpBootstrapper.cs:line 147
+ClientConnectionId:29fb1c0f-4cf0-428c-9fd7-26d850173fdd
+Error Number:4060,State:1,Class:11
+WARN  2017-10-06 09:28:05,274 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - System.Data.SqlClient.SqlException (0x80131904): Cannot open database "TodoDatabase" requested by the login. The login failed.
+Login failed for user 'NUMTECH\jw.chan'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 31
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 83
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 74
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+ClientConnectionId:29fb1c0f-4cf0-428c-9fd7-26d850173fdd
+Error Number:4060,State:1,Class:11
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "TodoDatabase" requested by the login. The login failed.
+Login failed for user 'NUMTECH\jw.chan'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.<>c__DisplayClass18_0.<BeginTransaction>b__0(DatabaseFacade database)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)
+   at Abp.EntityFrameworkCore.Uow.DbContextEfCoreTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\DbContextEfCoreTransactionStrategy.cs:line 38
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Uow\EfCoreUnitOfWork.cs:line 116
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.get_Table() in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 39
+   at Abp.EntityFrameworkCore.Repositories.EfCoreRepositoryBase`3.GetAllIncluding(Expression`1[] propertySelectors) in D:\Github\aspnetboilerplate\src\Abp.EntityFrameworkCore\EntityFrameworkCore\Repositories\EfCoreRepositoryBaseOfTEntityAndTPrimaryKey.cs:line 88
+   at Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 68
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   at Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) in D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:line 31
+   at Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) in D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:line 83
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   at Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   at Abp.BackgroundJobs.BackgroundJobManager.DoWork() in D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:line 74
+   at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
+ClientConnectionId:29fb1c0f-4cf0-428c-9fd7-26d850173fdd
+Error Number:4060,State:1,Class:11
+DEBUG 2017-10-06 09:28:32,051 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-10-06 09:28:32,156 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-10-06 09:28:32,179 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.Web.Host.Startup.MainProjectWebHostModule, Todo.MainProject.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,181 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectWebCoreModule, Todo.MainProject.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,182 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectApplicationModule, Todo.MainProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,182 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectCoreModule, Todo.MainProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,182 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,182 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,183 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,183 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,183 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,184 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,184 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,184 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,184 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,185 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:32,188 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-10-06 09:28:32,265 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:28:32,266 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:28:32,266 [2    ] o.Configuration.LanguageManagementConfig - Converted MainProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:28:32,266 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 09:28:32,599 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Todo.MainProject.EntityFrameworkCore.MainProjectDbContext, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 09:28:33,551 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-10-06 09:28:33,562 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-10-06 09:28:33,566 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-10-06 09:28:33,569 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: MainProject
+DEBUG 2017-10-06 09:28:33,570 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-10-06 09:28:33,758 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-10-06 09:28:33,808 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-10-06 09:28:33,808 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.CreateUserDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.UserDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.CreateRoleDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.PermissionDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.RoleDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-10-06 09:28:33,811 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-10-06 09:28:33,812 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.TenantDto
+INFO  2017-10-06 09:28:38,954 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2017-10-06 09:28:43,765 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Web.Host.Controllers.HomeController.Index (Todo.MainProject.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 09:28:43,807 [5    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-10-06 09:28:43,816 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Web.Host.Controllers.HomeController.Index (Todo.MainProject.Web.Host) in 1194.8326ms
+INFO  2017-10-06 09:28:43,827 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4914.2899ms 302 
+INFO  2017-10-06 09:28:43,841 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+INFO  2017-10-06 09:28:43,856 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.8337ms 301 
+INFO  2017-10-06 09:28:43,862 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/  
+INFO  2017-10-06 09:28:43,872 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:43,882 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.1109ms 200 text/html
+INFO  2017-10-06 09:28:43,916 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-10-06 09:28:43,931 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:43,935 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/css/reset.css  
+INFO  2017-10-06 09:28:43,938 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/css/screen.css  
+INFO  2017-10-06 09:28:43,945 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/object-assign-pollyfill.js  
+INFO  2017-10-06 09:28:43,966 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/jquery.slideto.min.js  
+INFO  2017-10-06 09:28:43,975 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/css/typography.css  
+INFO  2017-10-06 09:28:43,984 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:43,988 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,012 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,021 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 96.5831ms 200 application/javascript
+INFO  2017-10-06 09:28:44,023 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,030 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 101.1435ms 200 application/javascript
+INFO  2017-10-06 09:28:44,061 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,076 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-10-06 09:28:44,078 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-10-06 09:28:44,094 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 122.1784ms 200 text/css
+INFO  2017-10-06 09:28:44,096 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 133.2242ms 200 application/javascript
+INFO  2017-10-06 09:28:44,101 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.9963ms 200 text/css
+INFO  2017-10-06 09:28:44,116 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 159.6414ms 200 text/css
+INFO  2017-10-06 09:28:44,165 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,170 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,180 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/handlebars-4.0.5.js  
+INFO  2017-10-06 09:28:44,189 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.min.js  
+INFO  2017-10-06 09:28:44,193 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 135.7913ms 200 application/javascript
+INFO  2017-10-06 09:28:44,203 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/backbone-min.js  
+INFO  2017-10-06 09:28:44,211 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/lodash.min.js  
+INFO  2017-10-06 09:28:44,233 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 115.9772ms 200 application/javascript
+INFO  2017-10-06 09:28:44,258 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,264 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,284 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,342 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,358 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-10-06 09:28:44,360 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2017-10-06 09:28:44,368 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 100.712ms 200 application/javascript
+INFO  2017-10-06 09:28:44,375 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 199.9132ms 200 application/javascript
+INFO  2017-10-06 09:28:44,379 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 108.4424ms 200 application/javascript
+INFO  2017-10-06 09:28:44,486 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,495 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/swagger-oauth.js  
+INFO  2017-10-06 09:28:44,509 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/marked.js  
+INFO  2017-10-06 09:28:44,589 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,596 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,673 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 243.1069ms 200 application/javascript
+INFO  2017-10-06 09:28:44,701 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.7013ms 200 application/javascript
+INFO  2017-10-06 09:28:44,713 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/lib/jsoneditor.min.js  
+INFO  2017-10-06 09:28:44,719 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 270.8719ms 200 application/javascript
+INFO  2017-10-06 09:28:44,734 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 345.8726ms 200 application/javascript
+INFO  2017-10-06 09:28:44,745 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,750 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,753 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 305.1086ms 200 application/javascript
+INFO  2017-10-06 09:28:44,778 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 340.8284ms 200 application/javascript
+INFO  2017-10-06 09:28:44,786 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/images/logo_small.png  
+INFO  2017-10-06 09:28:44,794 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/css/print.css  
+INFO  2017-10-06 09:28:44,802 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,805 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,837 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 45.1548ms 200 image/png
+INFO  2017-10-06 09:28:44,854 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.9115ms 200 text/css
+INFO  2017-10-06 09:28:44,864 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/images/favicon-32x32.png  
+INFO  2017-10-06 09:28:44,889 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,891 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2017-10-06 09:28:44,898 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 37.0825ms 200 image/png
+INFO  2017-10-06 09:28:44,905 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/images/favicon-16x16.png  
+INFO  2017-10-06 09:28:44,912 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2017-10-06 09:28:44,918 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.7081ms 200 image/png
+INFO  2017-10-06 09:28:45,150 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 280.2558ms 200 application/json
+INFO  2017-10-06 09:28:45,499 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/abp.js?_=1507253325468  
+INFO  2017-10-06 09:28:45,501 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/ui/on-complete.js?_=1507253325469  
+INFO  2017-10-06 09:28:45,548 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2017-10-06 09:28:45,551 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2017-10-06 09:28:45,561 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 82.588ms 200 application/javascript
+INFO  2017-10-06 09:28:45,569 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.6324ms 200 application/javascript
+DEBUG 2017-10-06 10:04:01,252 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-10-06 10:04:01,356 [2    ] Abp.Modules.AbpModuleManager             - Found 14 ABP modules in total.
+DEBUG 2017-10-06 10:04:01,373 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.Web.Host.Startup.MainProjectWebHostModule, Todo.MainProject.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,376 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectWebCoreModule, Todo.MainProject.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,376 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectApplicationModule, Todo.MainProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,377 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.MainProjectCoreModule, Todo.MainProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,377 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,377 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,377 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,378 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,378 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.MainProject.EntityFrameworkCore.MainProjectEntityFrameworkModule, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,378 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,379 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,379 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,379 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,379 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:01,383 [2    ] Abp.Modules.AbpModuleManager             - 14 modules loaded.
+DEBUG 2017-10-06 10:04:01,459 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 10:04:01,459 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 10:04:01,459 [2    ] o.Configuration.LanguageManagementConfig - Converted MainProject (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 10:04:01,459 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2017-10-06 10:04:01,857 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Todo.MainProject.EntityFrameworkCore.MainProjectDbContext, Todo.MainProject.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 10:04:02,947 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2017-10-06 10:04:02,958 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-10-06 10:04:02,963 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2017-10-06 10:04:02,965 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: MainProject
+DEBUG 2017-10-06 10:04:02,967 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-10-06 10:04:03,177 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-10-06 10:04:03,228 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2017-10-06 10:04:03,228 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2017-10-06 10:04:03,232 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.CreateUserDto
+DEBUG 2017-10-06 10:04:03,232 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Users.Dto.UserDto
+DEBUG 2017-10-06 10:04:03,232 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2017-10-06 10:04:03,232 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Sessions.Dto.UserLoginInfoDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.CreateRoleDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.PermissionDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.Roles.Dto.RoleDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.EditTenantDto
+DEBUG 2017-10-06 10:04:03,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Todo.MainProject.MultiTenancy.Dto.TenantDto
+INFO  2017-10-06 10:04:05,585 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2017-10-06 10:04:09,915 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Web.Host.Controllers.HomeController.Index (Todo.MainProject.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:09,991 [6    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-10-06 10:04:10,000 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Web.Host.Controllers.HomeController.Index (Todo.MainProject.Web.Host) in 1009.5855ms
+INFO  2017-10-06 10:04:10,014 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4453.7367ms 302 
+INFO  2017-10-06 10:04:10,029 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2017-10-06 10:04:10,063 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.773ms 301 
+INFO  2017-10-06 10:04:10,073 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2017-10-06 10:04:10,083 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,105 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.4275ms 200 text/html
+INFO  2017-10-06 10:04:10,208 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2017-10-06 10:04:10,211 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2017-10-06 10:04:10,213 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-10-06 10:04:10,216 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2017-10-06 10:04:10,218 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2017-10-06 10:04:10,230 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2017-10-06 10:04:10,259 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,273 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,285 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,290 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,294 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,305 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.3759ms 200 text/css
+INFO  2017-10-06 10:04:10,306 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,316 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 128.6274ms 200 application/javascript
+INFO  2017-10-06 10:04:10,323 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 158.8179ms 200 application/javascript
+INFO  2017-10-06 10:04:10,343 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 156.3799ms 200 text/css
+INFO  2017-10-06 10:04:10,356 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-10-06 10:04:10,360 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 107.3757ms 200 text/css
+INFO  2017-10-06 10:04:10,393 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2017-10-06 10:04:10,410 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.972ms 200 application/javascript
+INFO  2017-10-06 10:04:10,432 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2017-10-06 10:04:10,438 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-10-06 10:04:10,442 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,445 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,483 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 93.0317ms 200 application/javascript
+INFO  2017-10-06 10:04:10,486 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2017-10-06 10:04:10,511 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 134.7637ms 200 application/javascript
+INFO  2017-10-06 10:04:10,521 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,523 [21   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2017-10-06 10:04:10,529 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,539 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,560 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-10-06 10:04:10,568 [21   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,573 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 160.6524ms 200 application/javascript
+INFO  2017-10-06 10:04:10,595 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 169.6075ms 200 application/javascript
+INFO  2017-10-06 10:04:10,603 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.3743ms 200 application/javascript
+INFO  2017-10-06 10:04:10,605 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2017-10-06 10:04:10,655 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2017-10-06 10:04:10,675 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,679 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 146.0825ms 200 application/javascript
+INFO  2017-10-06 10:04:10,687 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,711 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,716 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2017-10-06 10:04:10,723 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 151.1234ms 200 application/javascript
+INFO  2017-10-06 10:04:10,726 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2017-10-06 10:04:10,728 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 154.3201ms 200 application/javascript
+INFO  2017-10-06 10:04:10,773 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.9632ms 200 application/javascript
+INFO  2017-10-06 10:04:10,795 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,818 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,852 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 190.4725ms 200 application/javascript
+INFO  2017-10-06 10:04:10,863 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2017-10-06 10:04:10,868 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2017-10-06 10:04:10,894 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 222.6361ms 200 application/javascript
+INFO  2017-10-06 10:04:10,903 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,927 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2017-10-06 10:04:10,938 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 73.5055ms 200 image/png
+INFO  2017-10-06 10:04:10,940 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:10,990 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.6553ms 200 text/css
+INFO  2017-10-06 10:04:10,993 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-32x32.png  
+INFO  2017-10-06 10:04:11,000 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:11,006 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.2142ms 200 image/png
+INFO  2017-10-06 10:04:11,033 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+INFO  2017-10-06 10:04:11,040 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2017-10-06 10:04:11,048 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.5897ms 200 image/png
+INFO  2017-10-06 10:04:11,271 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 362.4369ms 200 application/json
+INFO  2017-10-06 10:04:11,637 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1507255451587  
+INFO  2017-10-06 10:04:11,639 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1507255451586  
+INFO  2017-10-06 10:04:11,690 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2017-10-06 10:04:11,692 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\src\Todo.MainProject.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2017-10-06 10:04:11,714 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.7622ms 200 application/javascript
+INFO  2017-10-06 10:04:11,717 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.9453ms 200 application/javascript
+INFO  2017-10-06 10:04:19,553 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-10-06 10:04:19,560 [11   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:19,567 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 31.7999ms 204 
+INFO  2017-10-06 10:04:19,577 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-10-06 10:04:19,602 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:19,607 [6    ] uthentication.JwtBearer.JwtBearerHandler - Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token: null
+INFO  2017-10-06 10:04:19,622 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:19,629 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:19,996 [11   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-10-06 10:04:20,049 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 426.7313ms
+INFO  2017-10-06 10:04:20,055 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 477.3153ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:20,067 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-10-06 10:04:20,073 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:20,080 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.9486ms 204 
+INFO  2017-10-06 10:04:20,089 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:20,097 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:20,115 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:20,454 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:20,465 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:20,476 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) in 362.0244ms
+INFO  2017-10-06 10:04:20,483 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 396.5985ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:38,786 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/TokenAuth/Authenticate  
+INFO  2017-10-06 10:04:38,791 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:38,820 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.2974ms 204 
+INFO  2017-10-06 10:04:38,842 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json; charset=UTF-8 77
+INFO  2017-10-06 10:04:38,854 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:38,874 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:39,215 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Controllers.TokenAuthController.Authenticate (Todo.MainProject.Web.Core) with arguments (Todo.MainProject.Models.TokenAuth.AuthenticateModel) - ModelState is Valid
+INFO  2017-10-06 10:04:39,900 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:39,906 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Controllers.TokenAuthController.Authenticate (Todo.MainProject.Web.Core) in 1032.4905ms
+INFO  2017-10-06 10:04:39,915 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1113.5111ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:41,167 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-10-06 10:04:41,173 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,183 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.2116ms 204 
+INFO  2017-10-06 10:04:41,205 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-10-06 10:04:41,219 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,241 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:41,249 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:41,258 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,266 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:41,451 [11   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-10-06 10:04:41,457 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 198.4018ms
+INFO  2017-10-06 10:04:41,472 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 258.9531ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:41,479 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-10-06 10:04:41,486 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,495 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 16.6528ms 204 
+INFO  2017-10-06 10:04:41,508 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:41,518 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,524 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:41,533 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:41,553 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:41,566 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:41,600 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:41,609 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) in 64.3209ms
+INFO  2017-10-06 10:04:41,627 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 114.3897ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:49,619 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:04:49,622 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:04:49,655 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:04:49,677 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,679 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,751 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 86.4169ms 204 
+INFO  2017-10-06 10:04:49,780 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,784 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:49,819 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.2763ms 204 
+INFO  2017-10-06 10:04:49,821 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 161.5583ms 204 
+INFO  2017-10-06 10:04:49,867 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:49,893 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:49,898 [13   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,924 [13   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:49,928 [13   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:49,935 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,940 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:49,944 [12   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:49,951 [11   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,959 [11   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:49,967 [11   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:49,973 [13   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,981 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:49,991 [11   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:50,168 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:50,170 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:50,182 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:04:50,252 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:50,254 [23   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:50,306 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 290.0587ms
+INFO  2017-10-06 10:04:50,308 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 283.3455ms
+INFO  2017-10-06 10:04:50,333 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 604.6801ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:50,360 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 519.169ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:50,525 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:50,535 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) in 542.8551ms
+INFO  2017-10-06 10:04:50,541 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 831.685ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:53,311 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:04:53,313 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2017-10-06 10:04:53,342 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,344 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,359 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.1243ms 204 
+INFO  2017-10-06 10:04:53,384 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.7891ms 204 
+INFO  2017-10-06 10:04:53,389 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:53,395 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:53,402 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,406 [12   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:53,411 [12   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:53,416 [13   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,421 [13   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:53,426 [13   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:53,437 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,442 [13   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:53,617 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Users.UserAppService.GetRoles (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:04:53,622 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Users.UserAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:04:53,657 [11   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:53,662 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Users.UserAppService.GetRoles (Todo.MainProject.Application) in 219.5632ms
+INFO  2017-10-06 10:04:53,668 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 307.7684ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:53,776 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:53,786 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Users.UserAppService.GetAll (Todo.MainProject.Application) in 348.6745ms
+INFO  2017-10-06 10:04:53,791 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 431.6523ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:04:56,710 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:04:56,718 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:56,734 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.7585ms 204 
+INFO  2017-10-06 10:04:56,737 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:04:56,749 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:56,754 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:04:56,761 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:04:56,775 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:04:56,975 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:04:57,034 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:04:57,043 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) in 267.3877ms
+INFO  2017-10-06 10:04:57,050 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 316.0146ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:05:02,902 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:05:02,908 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:02,915 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.4212ms 204 
+INFO  2017-10-06 10:05:02,922 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:05:02,933 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:02,940 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:05:02,947 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:05:02,957 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:02,966 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:05:02,980 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:05:02,985 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) in 28.0841ms
+INFO  2017-10-06 10:05:02,991 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.6639ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:05:46,485 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/Create  
+INFO  2017-10-06 10:05:46,491 [12   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:46,497 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.9323ms 204 
+INFO  2017-10-06 10:05:46,506 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Tenant/Create application/json; charset=UTF-8 216
+INFO  2017-10-06 10:05:46,517 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:46,523 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:05:46,527 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:05:46,539 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:46,554 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.MultiTenancy.TenantAppService.Create (Todo.MainProject.Application) with arguments (Todo.MainProject.MultiTenancy.Dto.CreateTenantDto) - ModelState is Valid
+INFO  2017-10-06 10:05:58,028 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:05:58,033 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.MultiTenancy.TenantAppService.Create (Todo.MainProject.Application) in 11493.1491ms
+INFO  2017-10-06 10:05:58,044 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11536.1319ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:05:58,058 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:05:58,068 [24   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:58,076 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.4494ms 204 
+INFO  2017-10-06 10:05:58,087 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:05:58,098 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:58,103 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:05:58,108 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:05:58,117 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:05:58,126 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:05:58,146 [24   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:05:58,151 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.MultiTenancy.TenantAppService.GetAll (Todo.MainProject.Application) in 33.876ms
+INFO  2017-10-06 10:05:58,160 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 69.6405ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:06,528 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Tenant/Get?Id=2&  
+INFO  2017-10-06 10:06:06,534 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:06,539 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.3392ms 204 
+INFO  2017-10-06 10:06:06,567 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Tenant/Get?Id=2& application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:06,575 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:06,580 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:06,585 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:06,596 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:06,606 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.MultiTenancy.TenantAppService.Get (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.EntityDto`1[System.Int32]) - ModelState is Valid
+INFO  2017-10-06 10:06:06,636 [24   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:06,641 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.MultiTenancy.TenantAppService.Get (Todo.MainProject.Application) in 44.2715ms
+INFO  2017-10-06 10:06:06,647 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 101.3765ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:34,766 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-10-06 10:06:34,771 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,777 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 14.1079ms 204 
+INFO  2017-10-06 10:06:34,809 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-10-06 10:06:34,823 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,833 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,838 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:34,857 [5    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-10-06 10:06:34,863 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 30.4223ms
+INFO  2017-10-06 10:06:34,870 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.5975ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:34,881 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-10-06 10:06:34,886 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,897 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.1014ms 204 
+INFO  2017-10-06 10:06:34,906 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:34,914 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,923 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:34,931 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:34,935 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:34,940 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) in 17.3674ms
+INFO  2017-10-06 10:06:34,945 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.6325ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:40,901 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Account/IsTenantAvailable  
+INFO  2017-10-06 10:06:40,907 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:40,935 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.8378ms 204 
+INFO  2017-10-06 10:06:40,937 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/Account/IsTenantAvailable application/json; charset=UTF-8 22
+INFO  2017-10-06 10:06:40,948 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:40,962 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:41,029 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Authorization.Accounts.AccountAppService.IsTenantAvailable (Todo.MainProject.Application) with arguments (Todo.MainProject.Authorization.Accounts.Dto.IsTenantAvailableInput) - ModelState is Valid
+INFO  2017-10-06 10:06:41,051 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:41,056 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Authorization.Accounts.AccountAppService.IsTenantAvailable (Todo.MainProject.Application) in 95.5663ms
+INFO  2017-10-06 10:06:41,062 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 145.3481ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:42,252 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-10-06 10:06:42,260 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,266 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.6312ms 204 
+INFO  2017-10-06 10:06:42,311 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-10-06 10:06:42,338 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,347 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,352 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:42,385 [10   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-10-06 10:06:42,390 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 43.3307ms
+INFO  2017-10-06 10:06:42,397 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 84.3801ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:42,406 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-10-06 10:06:42,411 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,417 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 11.0845ms 204 
+INFO  2017-10-06 10:06:42,425 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:42,431 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,441 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:42,449 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:42,473 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:42,480 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) in 39.0949ms
+INFO  2017-10-06 10:06:42,485 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 62.6757ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:46,650 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/TokenAuth/Authenticate  
+INFO  2017-10-06 10:06:46,655 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:46,661 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.452ms 204 
+INFO  2017-10-06 10:06:46,669 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/TokenAuth/Authenticate application/json; charset=UTF-8 77
+INFO  2017-10-06 10:06:46,676 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:46,685 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:46,694 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Controllers.TokenAuthController.Authenticate (Todo.MainProject.Web.Core) with arguments (Todo.MainProject.Models.TokenAuth.AuthenticateModel) - ModelState is Valid
+INFO  2017-10-06 10:06:46,772 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:46,777 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Controllers.TokenAuthController.Authenticate (Todo.MainProject.Web.Core) in 91.7086ms
+INFO  2017-10-06 10:06:46,811 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 116.3006ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:48,035 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/AbpUserConfiguration/GetAll  
+INFO  2017-10-06 10:06:48,044 [27   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,054 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.2323ms 204 
+INFO  2017-10-06 10:06:48,081 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/AbpUserConfiguration/GetAll application/json 
+INFO  2017-10-06 10:06:48,086 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,091 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:48,096 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:48,106 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,112 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:48,159 [5    ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value Abp.Web.Models.AjaxResponse.
+INFO  2017-10-06 10:06:48,164 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 58.8252ms
+INFO  2017-10-06 10:06:48,169 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 109.8161ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:48,179 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2017-10-06 10:06:48,184 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,189 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.7795ms 204 
+INFO  2017-10-06 10:06:48,198 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Session/GetCurrentLoginInformations application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:48,202 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,208 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:48,214 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:48,228 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:48,239 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:48,266 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:48,272 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Sessions.SessionAppService.GetCurrentLoginInformations (Todo.MainProject.Application) in 48.0524ms
+INFO  2017-10-06 10:06:48,280 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.444ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:52,729 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:06:52,735 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/User/GetRoles  
+INFO  2017-10-06 10:06:52,740 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,751 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.3579ms 204 
+INFO  2017-10-06 10:06:52,766 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,770 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:52,801 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.5246ms 204 
+INFO  2017-10-06 10:06:52,814 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,817 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/User/GetRoles application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:52,828 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:52,830 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,835 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:52,839 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:52,844 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:52,852 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,857 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:52,864 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Users.UserAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:06:52,869 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Users.UserAppService.GetRoles (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:52,886 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:52,891 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Users.UserAppService.GetRoles (Todo.MainProject.Application) in 33.6969ms
+INFO  2017-10-06 10:06:52,899 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 91.6841ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:52,912 [27   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:52,918 [27   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Users.UserAppService.GetAll (Todo.MainProject.Application) in 65.4127ms
+INFO  2017-10-06 10:06:52,924 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 157.5327ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:53,798 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:06:53,803 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:06:53,810 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:53,812 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:06:53,844 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:53,851 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.9197ms 204 
+INFO  2017-10-06 10:06:53,862 [28   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:53,894 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:53,902 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 76.2213ms 204 
+INFO  2017-10-06 10:06:53,925 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 56.7253ms 204 
+INFO  2017-10-06 10:06:53,930 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:53,939 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:53,941 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:06:53,989 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:54,013 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:54,019 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:54,028 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:54,030 [10   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:54,060 [10   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:54,063 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:06:54,068 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:06:54,095 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:54,100 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:54,129 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:06:54,134 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:54,136 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:06:54,142 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:06:54,152 [29   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:54,182 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:54,187 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 82.3943ms
+INFO  2017-10-06 10:06:54,190 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 107.7077ms
+INFO  2017-10-06 10:06:54,216 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 330.7208ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:54,239 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 372.4267ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:06:54,279 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:06:54,283 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) in 177.8371ms
+INFO  2017-10-06 10:06:54,294 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 349.1628ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:08:45,414 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10&  
+INFO  2017-10-06 10:08:45,423 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:08:45,431 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,450 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:21021/api/services/app/Role/GetAllPermissions  
+INFO  2017-10-06 10:08:45,474 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.0416ms 204 
+INFO  2017-10-06 10:08:45,476 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,512 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAll?SkipCount=0&MaxResultCount=10& application/json; charset=UTF-8 
+INFO  2017-10-06 10:08:45,514 [42   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,537 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 68.8836ms 204 
+INFO  2017-10-06 10:08:45,564 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 102.8426ms 204 
+INFO  2017-10-06 10:08:45,591 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:08:45,618 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,646 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/Role/GetAllPermissions application/json; charset=UTF-8 
+INFO  2017-10-06 10:08:45,649 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,673 [6    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:08:45,721 [42   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,744 [6    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:08:45,772 [5    ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:08:45,774 [42   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2017-10-06 10:08:45,823 [5    ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:08:45,825 [42   ] uthentication.JwtBearer.JwtBearerHandler - AuthenticationScheme: Bearer was successfully authenticated.
+INFO  2017-10-06 10:08:45,881 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,883 [42   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,885 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2017-10-06 10:08:45,936 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:08:45,937 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 10:08:45,942 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) with arguments (Abp.Application.Services.Dto.PagedResultRequestDto) - ModelState is Valid
+INFO  2017-10-06 10:08:45,981 [33   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:08:45,991 [33   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 153.5327ms
+INFO  2017-10-06 10:08:46,015 [34   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:08:46,066 [33   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 428.7757ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:08:46,076 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAllPermissions (Todo.MainProject.Application) in 187.2373ms
+INFO  2017-10-06 10:08:46,086 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 479.3725ms 200 application/json; charset=utf-8
+INFO  2017-10-06 10:08:46,098 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 10:08:46,103 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.MainProject.Roles.RoleAppService.GetAll (Todo.MainProject.Application) in 269.6ms
+INFO  2017-10-06 10:08:46,110 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 619.5088ms 200 application/json; charset=utf-8
+DEBUG 2017-10-06 11:06:17,975 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-10-06 11:06:18,025 [2    ] Abp.Modules.AbpModuleManager             - Found 6 ABP modules in total.
+DEBUG 2017-10-06 11:06:18,031 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.DemoPlugin.Web.Host.Startup.DemoPluginWebHostModule, Todo.DemoPlugin.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,034 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.DemoPlugin.DemoPluginWebCoreModule, Todo.DemoPlugin.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,034 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Todo.DemoPlugin.DemoPluginApplicationModule, Todo.DemoPlugin.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,035 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,035 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,036 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-10-06 11:06:18,039 [2    ] Abp.Modules.AbpModuleManager             - 6 modules loaded.
+DEBUG 2017-10-06 11:06:18,298 [2    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2017-10-06 11:06:18,308 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-10-06 11:06:18,309 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-10-06 11:06:18,564 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+INFO  2017-10-06 11:06:19,222 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+WARN  2017-10-06 11:06:19,303 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-10-06 11:06:19,319 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+INFO  2017-10-06 11:06:19,596 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.DemoPlugin.Web.Host.Controllers.HomeController.Index (Todo.DemoPlugin.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2017-10-06 11:06:19,612 [5    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2017-10-06 11:06:19,620 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.DemoPlugin.Web.Host.Controllers.HomeController.Index (Todo.DemoPlugin.Web.Host) in 119.8272ms
+INFO  2017-10-06 11:06:19,632 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 433.2016ms 302 
+INFO  2017-10-06 11:06:19,648 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2017-10-06 11:06:19,663 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13.3345ms 301 
+INFO  2017-10-06 11:06:19,670 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2017-10-06 11:06:19,679 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,691 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17.5ms 200 text/html
+INFO  2017-10-06 11:06:19,729 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2017-10-06 11:06:19,739 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2017-10-06 11:06:19,745 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2017-10-06 11:06:19,767 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2017-10-06 11:06:19,778 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2017-10-06 11:06:19,795 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,804 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2017-10-06 11:06:19,808 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,821 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,833 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,837 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 122.5909ms 200 text/css
+INFO  2017-10-06 11:06:19,871 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 83.6878ms 200 text/css
+INFO  2017-10-06 11:06:19,885 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,907 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 129.538ms 200 text/css
+INFO  2017-10-06 11:06:19,910 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:19,929 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 161.128ms 200 application/javascript
+INFO  2017-10-06 11:06:19,967 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2017-10-06 11:06:19,973 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2017-10-06 11:06:19,978 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 181.1206ms 200 application/javascript
+INFO  2017-10-06 11:06:19,985 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,001 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 168.4624ms 200 application/javascript
+INFO  2017-10-06 11:06:20,018 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2017-10-06 11:06:20,022 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2017-10-06 11:06:20,036 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,046 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2017-10-06 11:06:20,053 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,057 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2017-10-06 11:06:20,075 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.1387ms 200 application/javascript
+INFO  2017-10-06 11:06:20,078 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.6092ms 200 application/javascript
+INFO  2017-10-06 11:06:20,138 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,146 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 89.0829ms 200 application/javascript
+INFO  2017-10-06 11:06:20,180 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,184 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,218 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2017-10-06 11:06:20,229 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2017-10-06 11:06:20,277 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,288 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2017-10-06 11:06:20,319 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 143.0031ms 200 application/javascript
+INFO  2017-10-06 11:06:20,358 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 287.4939ms 200 application/javascript
+INFO  2017-10-06 11:06:20,375 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 276.7621ms 200 application/javascript
+INFO  2017-10-06 11:06:20,380 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,385 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,396 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 148.8832ms 200 application/javascript
+INFO  2017-10-06 11:06:20,446 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 270.3175ms 200 application/javascript
+INFO  2017-10-06 11:06:20,452 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2017-10-06 11:06:20,457 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2017-10-06 11:06:20,464 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 249.0075ms 200 application/javascript
+INFO  2017-10-06 11:06:20,476 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,478 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,519 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 77.3481ms 200 application/javascript
+INFO  2017-10-06 11:06:20,531 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 109.9259ms 200 application/javascript
+INFO  2017-10-06 11:06:20,547 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2017-10-06 11:06:20,575 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2017-10-06 11:06:20,608 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2017-10-06 11:06:20,615 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,643 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,644 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.1985ms 200 text/css
+INFO  2017-10-06 11:06:20,659 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 151.3571ms 200 image/png
+INFO  2017-10-06 11:06:20,695 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-32x32.png  
+INFO  2017-10-06 11:06:20,701 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,712 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 42.1823ms 200 image/png
+INFO  2017-10-06 11:06:20,719 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/favicon-16x16.png  
+INFO  2017-10-06 11:06:20,724 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/favicon-16x16.png'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:20,732 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.5399ms 200 image/png
+INFO  2017-10-06 11:06:20,871 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 316.8885ms 200 application/json
+INFO  2017-10-06 11:06:20,921 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1507259180900  
+INFO  2017-10-06 11:06:20,928 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1507259180901  
+INFO  2017-10-06 11:06:20,961 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\Todo.DemoPlugin\Todo.DemoPlugin.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2017-10-06 11:06:20,963 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\Development\PluginProjects\Todo.MainProject\3.0.0\aspnet-core\Todo.DemoPlugin\Todo.DemoPlugin.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2017-10-06 11:06:20,980 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54.5118ms 200 application/javascript
+INFO  2017-10-06 11:06:21,020 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 64.2975ms 200 application/javascript
+INFO  2017-10-06 11:06:27,770 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/throbber.gif  
+INFO  2017-10-06 11:06:27,784 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/throbber.gif'. Physical path: 'N/A'
+INFO  2017-10-06 11:06:27,805 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.1246ms 200 image/gif
+INFO  2017-10-06 11:06:32,193 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/CalculationService/Calculation_Add?x=1&y=2  0
+INFO  2017-10-06 11:06:32,199 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2017-10-06 11:06:32,203 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2017-10-06 11:06:32,222 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2017-10-06 11:06:32,226 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2017-10-06 11:06:32,277 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Todo.DemoPlugin.Calculation.CalculationService.Calculation_Add (Todo.DemoPlugin.Application) with arguments (1, 2) - ModelState is Valid
+INFO  2017-10-06 11:06:32,285 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2017-10-06 11:06:32,297 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Todo.DemoPlugin.Calculation.CalculationService.Calculation_Add (Todo.DemoPlugin.Application) in 76.8535ms
+INFO  2017-10-06 11:06:32,302 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 109.7592ms 200 application/json; charset=utf-8
