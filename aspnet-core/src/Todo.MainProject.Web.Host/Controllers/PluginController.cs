@@ -7,6 +7,7 @@ using Todo.MainProject.Web.Host.Services.Dto;
 
 namespace Todo.MainProject.Web.Host.Controllers
 {
+    [AbpMvcAuthorize]
     [Route("api/[controller]")]
     public class PluginController : MainProjectControllerBase
     {

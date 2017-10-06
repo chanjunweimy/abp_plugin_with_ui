@@ -12,7 +12,7 @@ export class AppComponent extends AppComponentBase implements OnInit, AfterViewI
   private viewContainerRef: ViewContainerRef;
 
   constructor(
-    injector: Injector
+    injector: Injector,
   ) {
     super(injector);
   }

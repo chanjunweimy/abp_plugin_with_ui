@@ -1,6 +1,8 @@
 ﻿import { Component, Injector, ViewEncapsulation } from '@angular/core';
 import { AppComponentBase } from '@shared/app-component-base';
 import { MenuItem } from '@shared/layout/menu-item';
+import { PluginService } from 'app/plugins/plugin.service';
+import { PluginObject } from '../../shared/service-proxies/service-proxies';
 
 @Component({
     templateUrl: './sidebar-nav.component.html',
@@ -8,7 +10,7 @@ import { MenuItem } from '@shared/layout/menu-item';
     encapsulation: ViewEncapsulation.None
 })
 export class SideBarNavComponent extends AppComponentBase {
-
+    plugins: PluginObject[] = [];
     menuItems: MenuItem[] = [
         new MenuItem(this.l("HomePage"), "", "home", "/app/home"),
 
@@ -36,9 +38,18 @@ export class SideBarNavComponent extends AppComponentBase {
     ];
 
     constructor(
-        injector: Injector
+        injector: Injector,
+        pluginService: PluginService
     ) {
         super(injector);
+        this.plugins = pluginService.loadPlugins();
+        const menus: MenuItem[] = [];
+        for (let i = 0; i < this.plugins.length; i++) {
+            const plugin = this.plugins[i];
+            const menu = new MenuItem(plugin.title, '', '', plugin.url);
+            menus.push(menu);
+        }
+        const pluginItem = new MenuItem('plugins', '', 'menu', '', menus);
     }
 
     showMenuItem(menuItem): boolean {
