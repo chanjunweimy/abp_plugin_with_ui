@@ -1,17 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { ApiServiceProxy, PluginObject } from '../../shared/service-proxies/service-proxies';
 
 @Injectable()
 export class PluginService {
-  plugins: PluginObject[] = [];
+  pluginChange: EventEmitter<PluginObject[]> = new EventEmitter();
+  redirectUrlPrefix = 'url_';
 
   constructor(apiService: ApiServiceProxy) {
-      apiService.plugin().subscribe((result:PluginObject[])=>{
-        this.plugins = result;
+      apiService.plugin().subscribe((result: PluginObject[]) => {
+        this.pluginChange.emit(result);
     });
   }
 
   loadPlugins() {
-    return this.plugins;
+    return this.pluginChange;
   }
 }

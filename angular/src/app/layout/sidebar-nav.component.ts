@@ -10,7 +10,6 @@ import { PluginObject } from '../../shared/service-proxies/service-proxies';
     encapsulation: ViewEncapsulation.None
 })
 export class SideBarNavComponent extends AppComponentBase {
-    plugins: PluginObject[] = [];
     menuItems: MenuItem[] = [
         new MenuItem(this.l("HomePage"), "", "home", "/app/home"),
 
@@ -42,14 +41,15 @@ export class SideBarNavComponent extends AppComponentBase {
         pluginService: PluginService
     ) {
         super(injector);
-        this.plugins = pluginService.loadPlugins();
-        const menus: MenuItem[] = [];
-        for (let i = 0; i < this.plugins.length; i++) {
-            const plugin = this.plugins[i];
-            const menu = new MenuItem(plugin.title, '', '', plugin.url);
-            menus.push(menu);
-        }
-        const pluginItem = new MenuItem('plugins', '', 'menu', '', menus);
+        pluginService.loadPlugins().subscribe((plugins: PluginObject[]) => {
+            const menus: MenuItem[] = [];
+            for (let i = 0; i < plugins.length; i++) {
+                const plugin = plugins[i];
+                const pluginUrl = plugin.url.replace('/', '');
+                const menu = new MenuItem(plugin.title, '', '', pluginService.redirectUrlPrefix + pluginUrl);
+                this.menuItems.push(menu);
+            }
+        });
     }
 
     showMenuItem(menuItem): boolean {

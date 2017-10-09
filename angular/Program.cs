@@ -17,9 +17,21 @@ namespace Todo.MainProject.AngularUI
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+        public static IWebHost BuildWebHost(string[] args) {
+            var configuration = new ConfigurationBuilder()
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        .AddJsonFile("hosting.json", true)
+                        .Build();
+            var host = new WebHostBuilder()
+                    .UseKestrel(options => options.AddServerHeader = false)
+                    .UseConfiguration(configuration)
+                    .UseContentRoot(Directory.GetCurrentDirectory())
+                    .UseIISIntegration()
+                    .UseStartup<Startup>()
+                    .Build();
+
+            return host;
+        }
+            
     }
 }

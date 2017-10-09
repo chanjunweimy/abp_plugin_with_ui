@@ -1,8 +1,12 @@
 ﻿import { Component, ViewContainerRef, Injector, OnInit, AfterViewInit } from '@angular/core';
 import { AppConsts } from '@shared/AppConsts';
+import { ActivatedRoute } from '@angular/router';
 import { AppComponentBase } from '@shared/app-component-base';
 
 import { SignalRHelper } from '@shared/helpers/SignalRHelper';
+import { PluginObject } from '@shared/service-proxies/service-proxies';
+import { PluginService } from '@app/plugins/plugin.service';
+import { PluginComponent } from '@app/plugins/plugin.component';
 
 @Component({
   templateUrl: './app.component.html'
@@ -13,6 +17,8 @@ export class AppComponent extends AppComponentBase implements OnInit, AfterViewI
 
   constructor(
     injector: Injector,
+    private activatedRoute: ActivatedRoute,
+    private pluginService: PluginService
   ) {
     super(injector);
   }
@@ -35,6 +41,15 @@ export class AppComponent extends AppComponentBase implements OnInit, AfterViewI
           this.close();
         }
       });
+    });
+
+    this.pluginService.loadPlugins().subscribe((plugins: PluginObject[]) => {
+      for (let i = 0; i < plugins.length; i++) {
+        const plugin = plugins[i];
+        const pluginUrl = plugin.url.replace('/', '');
+        const route = {path: this.pluginService.redirectUrlPrefix + pluginUrl, component: PluginComponent};
+        this.activatedRoute.routeConfig.children.push(route);
+      }
     });
   }
 

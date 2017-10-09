@@ -6,8 +6,6 @@
 //----------------------
 // ReSharper disable InconsistentNaming
 
-import * as moment from 'moment';
-
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/throw';
@@ -15,6 +13,8 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/finally';
+
 
 import { Observable } from 'rxjs/Observable';
 import { Injectable, Inject, Optional, OpaqueToken } from '@angular/core';
@@ -1733,22 +1733,13 @@ export class CreateRoleDto implements ICreateRoleDto {
     isStatic: boolean;
     permissions: string[];
 
-    constructor(data?: ICreateRoleDto) {
-        if (data) {
-            for (var property in data) {
-                if (data.hasOwnProperty(property))
-                    (<any>this)[property] = (<any>data)[property];
-            }
-        }
-    }
-
-    init(data?: any) {
-        if (data) {
-            this.name = data["name"];
-            this.displayName = data["displayName"];
-            this.normalizedName = data["normalizedName"];
-            this.description = data["description"];
-            this.isStatic = data["isStatic"];
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.name = data["name"] !== undefined ? data["name"] : null;
+            this.displayName = data["displayName"] !== undefined ? data["displayName"] : null;
+            this.normalizedName = data["normalizedName"] !== undefined ? data["normalizedName"] : null;
+            this.description = data["description"] !== undefined ? data["description"] : null;
+            this.isStatic = data["isStatic"] !== undefined ? data["isStatic"] : null;
             if (data["permissions"] && data["permissions"].constructor === Array) {
                 this.permissions = [];
                 for (let item of data["permissions"])
@@ -1758,24 +1749,31 @@ export class CreateRoleDto implements ICreateRoleDto {
     }
 
     static fromJS(data: any): CreateRoleDto {
-        let result = new CreateRoleDto();
-        result.init(data);
-        return result;
+        return new CreateRoleDto(data);
     }
 
-    toJSON(data?: any) {
-        data = typeof data === 'object' ? data : {};
-        data["name"] = this.name;
-        data["displayName"] = this.displayName;
-        data["normalizedName"] = this.normalizedName;
-        data["description"] = this.description;
-        data["isStatic"] = this.isStatic;
+    toJS(data?: any) {
+        data = data === undefined ? {} : data;
+        data["name"] = this.name !== undefined ? this.name : null;
+        data["displayName"] = this.displayName !== undefined ? this.displayName : null;
+        data["normalizedName"] = this.normalizedName !== undefined ? this.normalizedName : null;
+        data["description"] = this.description !== undefined ? this.description : null;
+        data["isStatic"] = this.isStatic !== undefined ? this.isStatic : null;
         if (this.permissions && this.permissions.constructor === Array) {
             data["permissions"] = [];
             for (let item of this.permissions)
                 data["permissions"].push(item);
         }
         return data; 
+    }
+
+    toJSON() {
+        return JSON.stringify(this.toJS());
+    }
+
+    clone() {
+        const json = this.toJSON();
+        return new CreateRoleDto(JSON.parse(json));
     }
 }
 
@@ -2191,29 +2189,18 @@ export class CreateTenantDto implements ICreateTenantDto {
     connectionString: string;
     isActive: boolean;
 
-    constructor(data?: ICreateTenantDto) {
-        if (data) {
-            for (var property in data) {
-                if (data.hasOwnProperty(property))
-                    (<any>this)[property] = (<any>data)[property];
-            }
-        }
-    }
-
-    init(data?: any) {
-        if (data) {
-            this.tenancyName = data["tenancyName"];
-            this.name = data["name"];
-            this.adminEmailAddress = data["adminEmailAddress"];
-            this.connectionString = data["connectionString"];
-            this.isActive = data["isActive"];
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.tenancyName = data["tenancyName"] !== undefined ? data["tenancyName"] : null;
+            this.name = data["name"] !== undefined ? data["name"] : null;
+            this.adminEmailAddress = data["adminEmailAddress"] !== undefined ? data["adminEmailAddress"] : null;
+            this.connectionString = data["connectionString"] !== undefined ? data["connectionString"] : null;
+            this.isActive = data["isActive"] !== undefined ? data["isActive"] : null;
         }
     }
 
     static fromJS(data: any): CreateTenantDto {
-        let result = new CreateTenantDto();
-        result.init(data);
-        return result;
+        return new CreateTenantDto(data);
     }
 
     toJSON(data?: any) {
@@ -2557,51 +2544,49 @@ export class CreateUserDto implements ICreateUserDto {
     roleNames: string[];
     password: string;
 
-    constructor(data?: ICreateUserDto) {
-        if (data) {
-            for (var property in data) {
-                if (data.hasOwnProperty(property))
-                    (<any>this)[property] = (<any>data)[property];
-            }
-        }
-    }
-
-    init(data?: any) {
-        if (data) {
-            this.userName = data["userName"];
-            this.name = data["name"];
-            this.surname = data["surname"];
-            this.emailAddress = data["emailAddress"];
-            this.isActive = data["isActive"];
+    constructor(data?: any) {
+        if (data !== undefined) {
+            this.userName = data["userName"] !== undefined ? data["userName"] : null;
+            this.name = data["name"] !== undefined ? data["name"] : null;
+            this.surname = data["surname"] !== undefined ? data["surname"] : null;
+            this.emailAddress = data["emailAddress"] !== undefined ? data["emailAddress"] : null;
+            this.isActive = data["isActive"] !== undefined ? data["isActive"] : null;
             if (data["roleNames"] && data["roleNames"].constructor === Array) {
                 this.roleNames = [];
                 for (let item of data["roleNames"])
                     this.roleNames.push(item);
             }
-            this.password = data["password"];
+            this.password = data["password"] !== undefined ? data["password"] : null;
         }
     }
 
     static fromJS(data: any): CreateUserDto {
-        let result = new CreateUserDto();
-        result.init(data);
-        return result;
+        return new CreateUserDto(data);
     }
 
-    toJSON(data?: any) {
-        data = typeof data === 'object' ? data : {};
-        data["userName"] = this.userName;
-        data["name"] = this.name;
-        data["surname"] = this.surname;
-        data["emailAddress"] = this.emailAddress;
-        data["isActive"] = this.isActive;
+    toJS(data?: any) {
+        data = data === undefined ? {} : data;
+        data["userName"] = this.userName !== undefined ? this.userName : null;
+        data["name"] = this.name !== undefined ? this.name : null;
+        data["surname"] = this.surname !== undefined ? this.surname : null;
+        data["emailAddress"] = this.emailAddress !== undefined ? this.emailAddress : null;
+        data["isActive"] = this.isActive !== undefined ? this.isActive : null;
         if (this.roleNames && this.roleNames.constructor === Array) {
             data["roleNames"] = [];
             for (let item of this.roleNames)
                 data["roleNames"].push(item);
         }
-        data["password"] = this.password;
+        data["password"] = this.password !== undefined ? this.password : null;
         return data; 
+    }
+
+    toJSON() {
+        return JSON.stringify(this.toJS());
+    }
+
+    clone() {
+        const json = this.toJSON();
+        return new CreateUserDto(JSON.parse(json));
     }
 }
 

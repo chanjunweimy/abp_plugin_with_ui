@@ -4,6 +4,13 @@
    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
    "version": "0.2.0",
    "configurations": [
+       {
+           "type": "chrome",
+           "request": "launch",
+           "name": "Launch Chrome",
+           "url": "http://localhost:4200",
+           "webRoot": "${workspaceRoot}"
+       },
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
