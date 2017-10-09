@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.Web.Core", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.Web.Host", "Todo.DemoPlugin\Todo.DemoPlugin.Web.Host\Todo.DemoPlugin.Web.Host.csproj", "{A79290D2-9BA4-48B4-8F52-40DCE2B8C2BB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.AngularUI", "..\calculatorplugin\Todo.DemoPlugin.AngularUI.csproj", "{7FB35A73-F05C-4278-8404-DAE49CFE0ACC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A79290D2-9BA4-48B4-8F52-40DCE2B8C2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A79290D2-9BA4-48B4-8F52-40DCE2B8C2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A79290D2-9BA4-48B4-8F52-40DCE2B8C2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB35A73-F05C-4278-8404-DAE49CFE0ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB35A73-F05C-4278-8404-DAE49CFE0ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB35A73-F05C-4278-8404-DAE49CFE0ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB35A73-F05C-4278-8404-DAE49CFE0ACC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{E1E8C32F-682D-47D3-AD53-B095B48CA1AD} = {8913391D-1159-4513-9A36-E7D7598A3599}
 		{38F103A4-F3FB-4CD6-85B6-4FA322265C3A} = {8913391D-1159-4513-9A36-E7D7598A3599}
 		{A79290D2-9BA4-48B4-8F52-40DCE2B8C2BB} = {8913391D-1159-4513-9A36-E7D7598A3599}
+		{7FB35A73-F05C-4278-8404-DAE49CFE0ACC} = {8913391D-1159-4513-9A36-E7D7598A3599}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D09F9195-9E91-48E3-B172-1F12B2FD406B}
