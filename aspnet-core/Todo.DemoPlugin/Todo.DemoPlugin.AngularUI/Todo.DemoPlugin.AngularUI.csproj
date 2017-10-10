@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mkdir $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns&#xD;&#xA;xcopy $(ProjectDir)wwwroot\calculator-plugin $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns\calculator-plugin /Y /I /E" />
+    <Exec Command="mkdir $(ProjectDir)..\Todo.DemoPlugin.Web.Core\calculator-plugin&#xD;&#xA;xcopy $(ProjectDir)wwwroot\calculator-plugin $(ProjectDir)..\Todo.DemoPlugin.Web.Core\calculator-plugin /Y /I /E" />
   </Target>
 
   <Target Name="PreBuild" Condition="'$(Configuration)'=='Release'" BeforeTargets="PreBuildEvent">

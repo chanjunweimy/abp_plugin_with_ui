@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Abp.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
 using Todo.MainProject.Controllers;
@@ -10,16 +9,13 @@ using Todo.MainProject.Web.Host.Services.Dto;
 
 namespace Todo.MainProject.Web.Host.Controllers
 {
-    [AbpMvcAuthorize]
     public class PluginController : MainProjectControllerBase
     {
         private readonly IPluginService _pluginService;
-        private readonly IFileProvider _fileProvider;
 
-        public PluginController(IPluginService pluginService, IFileProvider fileProvider)
+        public PluginController(IPluginService pluginService)
         {
             _pluginService = pluginService;
-            _fileProvider = fileProvider;
         }
 
         [HttpGet("api/[controller]/GetPluginObjectsResult")]
@@ -31,7 +27,6 @@ namespace Todo.MainProject.Web.Host.Controllers
         [HttpGet("api/[controller]/Download")]
         public List<FileContentResult> Download(string pluginName)
         {
-            var files = new List<FileContentResult>();
             if (_pluginService.IsNullService() || pluginName == null)
             {
                 return null;
@@ -45,19 +40,10 @@ namespace Todo.MainProject.Web.Host.Controllers
             }
 
             var folder = plugin.Url.Replace("/", "");
-            var fileEntries = _fileProvider.GetDirectoryContents(folder);
+            var fileProvider = _pluginService.GetFileProvider(pluginName);
+            var fileEntries = fileProvider.GetDirectoryContents(folder);
 
-            foreach (var fileEntry in fileEntries)
-            {
-                var file = LoadFileFromPath(fileEntry);
-                if (file == null)
-                {
-                    continue;
-                }
-                files.Add(file);
-            }
-           
-            return files;
+            return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
         }
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)
@@ -68,7 +54,7 @@ namespace Todo.MainProject.Web.Host.Controllers
                 return null;
             }
 
-            byte[] fileBytes = System.IO.File.ReadAllBytes(filename);
+            var fileBytes = System.IO.File.ReadAllBytes(filename);
             var file = File(fileBytes, GetContentType(filename), Path.GetFileName(filename));
             return file;
         }

@@ -6,6 +6,8 @@
 //----------------------
 // ReSharper disable InconsistentNaming
 
+import * as moment from 'moment';
+
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/throw';
@@ -15,12 +17,9 @@ import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/finally';
 
-
 import { Observable } from 'rxjs/Observable';
 import { Injectable, Inject, Optional, OpaqueToken } from '@angular/core';
 import { Http, Headers, ResponseContentType, Response } from '@angular/http';
-
-import * as moment from 'moment';
 
 export const API_BASE_URL = new OpaqueToken('API_BASE_URL');
 
@@ -254,7 +253,7 @@ export class ConfigurationServiceProxy {
 }
 
 @Injectable()
-export class ApiServiceProxy {
+export class PluginServiceProxy {
     private http: Http;
     private baseUrl: string;
     protected jsonParseReviver: (key: string, value: any) => any = undefined;
@@ -267,8 +266,8 @@ export class ApiServiceProxy {
     /**
      * @return Success
      */
-    plugin(): Observable<PluginObject[]> {
-        let url_ = this.baseUrl + "/api/Plugin";
+    getPluginObjectsResult(): Observable<PluginObject[]> {
+        let url_ = this.baseUrl + "/api/Plugin/GetPluginObjectsResult";
         url_ = url_.replace(/[?&]$/, "");
 
         let options_ = {
@@ -280,11 +279,11 @@ export class ApiServiceProxy {
         };
 
         return this.http.request(url_, options_).flatMap((response_) => {
-            return this.processPlugin(response_);
+            return this.processGetPluginObjectsResult(response_);
         }).catch((response_: any) => {
             if (response_ instanceof Response) {
                 try {
-                    return this.processPlugin(response_);
+                    return this.processGetPluginObjectsResult(response_);
                 } catch (e) {
                     return <Observable<PluginObject[]>><any>Observable.throw(e);
                 }
@@ -293,7 +292,7 @@ export class ApiServiceProxy {
         });
     }
 
-    protected processPlugin(response: Response): Observable<PluginObject[]> {
+    protected processGetPluginObjectsResult(response: Response): Observable<PluginObject[]> {
         const status = response.status; 
 
         let _headers: any = response.headers ? response.headers.toJSON() : {};
@@ -312,6 +311,58 @@ export class ApiServiceProxy {
             return throwException("An unexpected server error occurred.", status, _responseText, _headers);
         }
         return Observable.of<PluginObject[]>(<any>null);
+    }
+
+    /**
+     * @return Success
+     */
+    download(pluginName: string): Observable<FileContentResult[]> {
+        let url_ = this.baseUrl + "/api/Plugin/Download?";
+        if (pluginName !== undefined)
+            url_ += "pluginName=" + encodeURIComponent("" + pluginName) + "&"; 
+        url_ = url_.replace(/[?&]$/, "");
+
+        let options_ = {
+            method: "get",
+            headers: new Headers({
+                "Content-Type": "application/json", 
+                "Accept": "application/json"
+            })
+        };
+
+        return this.http.request(url_, options_).flatMap((response_) => {
+            return this.processDownload(response_);
+        }).catch((response_: any) => {
+            if (response_ instanceof Response) {
+                try {
+                    return this.processDownload(response_);
+                } catch (e) {
+                    return <Observable<FileContentResult[]>><any>Observable.throw(e);
+                }
+            } else
+                return <Observable<FileContentResult[]>><any>Observable.throw(response_);
+        });
+    }
+
+    protected processDownload(response: Response): Observable<FileContentResult[]> {
+        const status = response.status; 
+
+        let _headers: any = response.headers ? response.headers.toJSON() : {};
+        if (status === 200) {
+            const _responseText = response.text();
+            let result200: any = null;
+            let resultData200 = _responseText === "" ? null : JSON.parse(_responseText, this.jsonParseReviver);
+            if (resultData200 && resultData200.constructor === Array) {
+                result200 = [];
+                for (let item of resultData200)
+                    result200.push(FileContentResult.fromJS(item));
+            }
+            return Observable.of(result200);
+        } else if (status !== 200 && status !== 204) {
+            const _responseText = response.text();
+            return throwException("An unexpected server error occurred.", status, _responseText, _headers);
+        }
+        return Observable.of<FileContentResult[]>(<any>null);
     }
 }
 
@@ -1723,6 +1774,147 @@ export interface IPluginObject {
     title: string;
     path: string;
     url: string;
+}
+
+export class FileContentResult implements IFileContentResult {
+    fileContents: string;
+    contentType: string;
+    fileDownloadName: string;
+    lastModified: moment.Moment;
+    entityTag: EntityTagHeaderValue;
+
+    constructor(data?: IFileContentResult) {
+        if (data) {
+            for (var property in data) {
+                if (data.hasOwnProperty(property))
+                    (<any>this)[property] = (<any>data)[property];
+            }
+        }
+    }
+
+    init(data?: any) {
+        if (data) {
+            this.fileContents = data["fileContents"];
+            this.contentType = data["contentType"];
+            this.fileDownloadName = data["fileDownloadName"];
+            this.lastModified = data["lastModified"] ? moment(data["lastModified"].toString()) : <any>undefined;
+            this.entityTag = data["entityTag"] ? EntityTagHeaderValue.fromJS(data["entityTag"]) : <any>undefined;
+        }
+    }
+
+    static fromJS(data: any): FileContentResult {
+        let result = new FileContentResult();
+        result.init(data);
+        return result;
+    }
+
+    toJSON(data?: any) {
+        data = typeof data === 'object' ? data : {};
+        data["fileContents"] = this.fileContents;
+        data["contentType"] = this.contentType;
+        data["fileDownloadName"] = this.fileDownloadName;
+        data["lastModified"] = this.lastModified ? this.lastModified.toISOString() : <any>undefined;
+        data["entityTag"] = this.entityTag ? this.entityTag.toJSON() : <any>undefined;
+        return data; 
+    }
+}
+
+export interface IFileContentResult {
+    fileContents: string;
+    contentType: string;
+    fileDownloadName: string;
+    lastModified: moment.Moment;
+    entityTag: EntityTagHeaderValue;
+}
+
+export class EntityTagHeaderValue implements IEntityTagHeaderValue {
+    tag: StringSegment;
+    isWeak: boolean;
+
+    constructor(data?: IEntityTagHeaderValue) {
+        if (data) {
+            for (var property in data) {
+                if (data.hasOwnProperty(property))
+                    (<any>this)[property] = (<any>data)[property];
+            }
+        }
+    }
+
+    init(data?: any) {
+        if (data) {
+            this.tag = data["tag"] ? StringSegment.fromJS(data["tag"]) : <any>undefined;
+            this.isWeak = data["isWeak"];
+        }
+    }
+
+    static fromJS(data: any): EntityTagHeaderValue {
+        let result = new EntityTagHeaderValue();
+        result.init(data);
+        return result;
+    }
+
+    toJSON(data?: any) {
+        data = typeof data === 'object' ? data : {};
+        data["tag"] = this.tag ? this.tag.toJSON() : <any>undefined;
+        data["isWeak"] = this.isWeak;
+        return data; 
+    }
+}
+
+export interface IEntityTagHeaderValue {
+    tag: StringSegment;
+    isWeak: boolean;
+}
+
+export class StringSegment implements IStringSegment {
+    buffer: string;
+    offset: number;
+    length: number;
+    value: string;
+    hasValue: boolean;
+
+    constructor(data?: IStringSegment) {
+        if (data) {
+            for (var property in data) {
+                if (data.hasOwnProperty(property))
+                    (<any>this)[property] = (<any>data)[property];
+            }
+        }
+    }
+
+    init(data?: any) {
+        if (data) {
+            this.buffer = data["buffer"];
+            this.offset = data["offset"];
+            this.length = data["length"];
+            this.value = data["value"];
+            this.hasValue = data["hasValue"];
+        }
+    }
+
+    static fromJS(data: any): StringSegment {
+        let result = new StringSegment();
+        result.init(data);
+        return result;
+    }
+
+    toJSON(data?: any) {
+        data = typeof data === 'object' ? data : {};
+        data["buffer"] = this.buffer;
+        data["offset"] = this.offset;
+        data["length"] = this.length;
+        data["value"] = this.value;
+        data["hasValue"] = this.hasValue;
+        return data; 
+    }
+}
+
+export interface IStringSegment {
+    buffer: string;
+    offset: number;
+    length: number;
+    value: string;
+    hasValue: boolean;
 }
 
 export class CreateRoleDto implements ICreateRoleDto {

@@ -15,7 +15,6 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Abp.Extensions;
 using Abp.PlugIns;
-using Microsoft.Extensions.FileProviders;
 using Todo.MainProject.Authentication.JwtBearer;
 using Todo.MainProject.Web.Host.Services;
 
@@ -72,13 +71,10 @@ namespace Todo.MainProject.Web.Host.Startup
             if (Directory.Exists(pluginPath))
             {
                 pluginService = new PluginService(pluginPath);
-                services.AddSingleton<IFileProvider>(
-                    new PhysicalFileProvider(pluginPath));
                 services.AddSingleton<IPluginService>(pluginService);
             }
             else
             {
-                services.AddSingleton<IFileProvider>(new NullFileProvider());
                 pluginService = new NullPluginService();
                 services.AddSingleton<IPluginService>(pluginService);
             }

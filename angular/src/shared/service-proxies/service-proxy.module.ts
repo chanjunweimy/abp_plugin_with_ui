@@ -11,7 +11,7 @@ import * as ApiServiceProxies from './service-proxies';
         ApiServiceProxies.TokenAuthServiceProxy,
         ApiServiceProxies.AccountServiceProxy,
         ApiServiceProxies.ConfigurationServiceProxy,
-        ApiServiceProxies.ApiServiceProxy,
+        ApiServiceProxies.PluginServiceProxy,
         ApiServiceProxies.CalculationServiceServiceProxy
     ]
 })
