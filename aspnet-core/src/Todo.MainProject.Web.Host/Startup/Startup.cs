@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Abp.AspNetCore;
 using Abp.Castle.Logging.Log4Net;
@@ -14,8 +15,7 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Abp.Extensions;
 using Abp.PlugIns;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.FileProviders;
 using Todo.MainProject.Authentication.JwtBearer;
 using Todo.MainProject.Web.Host.Services;
 
@@ -45,8 +45,6 @@ namespace Todo.MainProject.Web.Host.Startup
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            IPluginService pluginService = new PluginService(_contentRootPath + "\\PlugIns");
-
             //MVC
             services.AddMvc(options =>
             {
@@ -69,7 +67,21 @@ namespace Todo.MainProject.Web.Host.Startup
                 });
             });
 
-            services.AddSingleton<IPluginService>(pluginService);
+            IPluginService pluginService;
+            var pluginPath = Path.Combine(_contentRootPath, "PlugIns");
+            if (Directory.Exists(pluginPath))
+            {
+                pluginService = new PluginService(pluginPath);
+                services.AddSingleton<IFileProvider>(
+                    new PhysicalFileProvider(pluginPath));
+                services.AddSingleton<IPluginService>(pluginService);
+            }
+            else
+            {
+                services.AddSingleton<IFileProvider>(new NullFileProvider());
+                pluginService = new NullPluginService();
+                services.AddSingleton<IPluginService>(pluginService);
+            }
 
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
@@ -97,6 +109,10 @@ namespace Todo.MainProject.Web.Host.Startup
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
 
+                if (pluginService.IsNullService())
+                {
+                    return;
+                }
                 var pluginObjects = pluginService.GetPluginObjects();
                 foreach (var pluginObject in pluginObjects)
                 {

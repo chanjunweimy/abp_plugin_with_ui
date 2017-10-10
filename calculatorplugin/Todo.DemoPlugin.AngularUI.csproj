@@ -14,13 +14,13 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
   </ItemGroup>
 
-  <Target Name="Build Angular" Condition="'$(Configuration)'=='Release'" BeforeTargets="Build">
-    <Message Text="* * * * * * Building Angular App * * * * * *" Importance="high" />
-    <Exec Command="ng build -bh /calculator-plugin/ -prod -aot" />
-  </Target>
-
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="mkdir $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns&#xD;&#xA;xcopy $(ProjectDir)wwwroot\calculator-plugin $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns\calculator-plugin /Y /I /E" />
+  </Target>
+
+  <Target Name="PreBuild" Condition="'$(Configuration)'=='Release'" BeforeTargets="PreBuildEvent">
+    <Message Text="* * * * * * Building Angular App * * * * * *" Importance="high" />
+    <Exec Command="ng build -bh /calculator-plugin/ -prod -aot" />
   </Target>
 
 </Project>

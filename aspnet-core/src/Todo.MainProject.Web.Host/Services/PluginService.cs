@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Todo.MainProject.Web.Host.Services.Dto;
 using System.IO;
+using Abp.Collections.Extensions;
 using Newtonsoft.Json;
 
 namespace Todo.MainProject.Web.Host.Services
@@ -9,10 +10,17 @@ namespace Todo.MainProject.Web.Host.Services
     public class PluginService : IPluginService
     {
         private readonly List<PluginObject> _pluginObjects;
+        private readonly string _pluginPath;
 
         public PluginService(string pluginPath)
         {
             _pluginObjects = new List<PluginObject>();
+            _pluginPath = pluginPath;
+            if (pluginPath == null)
+            {
+                return;
+            }
+
             if (!Directory.Exists(pluginPath))
             {
                 return;
@@ -26,9 +34,19 @@ namespace Todo.MainProject.Web.Host.Services
             }
         }
 
+        public string GetPluginDirectory()
+        {
+            return _pluginPath;
+        }
+
         public List<PluginObject> GetPluginObjects()
         {
             return _pluginObjects;
+        }
+
+        public bool IsNullService()
+        {
+            return this._pluginObjects.IsNullOrEmpty();
         }
     }
 }
