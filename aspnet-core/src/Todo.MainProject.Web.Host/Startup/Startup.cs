@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Abp.Extensions;
 using Abp.PlugIns;
+using Abp.Resources.Embedded;
 using Todo.MainProject.Authentication.JwtBearer;
 using Todo.MainProject.Web.Host.Services;
 
@@ -123,7 +124,9 @@ namespace Todo.MainProject.Web.Host.Startup
 
             app.UseCors(DefaultCorsPolicyName); //Enable CORS!
 
+            
             app.UseStaticFiles();
+            app.UseEmbeddedFiles();
 
             app.UseAuthentication();
             app.UseJwtTokenMiddleware();

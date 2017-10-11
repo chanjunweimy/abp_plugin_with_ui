@@ -1,7 +1,9 @@
-﻿using Abp.AspNetCore;
+﻿using System.Reflection;
+using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Resources.Embedded;
 using Microsoft.AspNetCore.Hosting;
 
 namespace Todo.DemoPlugin
@@ -22,6 +24,13 @@ namespace Todo.DemoPlugin
                  .CreateControllersForAppServices(
                      typeof(DemoPluginApplicationModule).GetAssembly()
                  );
+            Configuration.EmbeddedResources.Sources.Add(
+                new EmbeddedResourceSet(
+                    "/calculator-plugin/",
+                    Assembly.GetExecutingAssembly(),
+                    "Todo.DemoPlugin.calculator-plugin"
+                )
+            );
         }
 
         public override void Initialize()

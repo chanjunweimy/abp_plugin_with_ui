@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Microsoft.Extensions.FileProviders;
+using System.Reflection;
 using Todo.MainProject.Web.Host.Services.Dto;
 
 namespace Todo.MainProject.Web.Host.Services
@@ -8,6 +8,5 @@ namespace Todo.MainProject.Web.Host.Services
     {
         List<PluginObject> GetPluginObjects();
         bool IsNullService();
-        IFileProvider GetFileProvider(string pluginTitle);
     }
 }

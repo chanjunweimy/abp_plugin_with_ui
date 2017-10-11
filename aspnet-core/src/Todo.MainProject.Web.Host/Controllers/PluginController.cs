@@ -12,10 +12,12 @@ namespace Todo.MainProject.Web.Host.Controllers
     public class PluginController : MainProjectControllerBase
     {
         private readonly IPluginService _pluginService;
+        private readonly IFileProvider _fileProvider;
 
-        public PluginController(IPluginService pluginService)
+        public PluginController(IPluginService pluginService, IFileProvider fileProvider)
         {
             _pluginService = pluginService;
+            _fileProvider = fileProvider;
         }
 
         [HttpGet("api/[controller]/GetPluginObjectsResult")]
@@ -39,11 +41,19 @@ namespace Todo.MainProject.Web.Host.Controllers
                 return null;
             }
 
+            var files = new List<FileContentResult>();
+            var filename = "calculator-plugin/index.html";
+            var fileBytes = System.IO.File.ReadAllBytes(filename);
+            var file = File(fileBytes, GetContentType(filename), Path.GetFileName(filename));
+            files.Add(file);
+            return files;
+            /*
             var folder = plugin.Url.Replace("/", "");
             var fileProvider = _pluginService.GetFileProvider(pluginName);
-            var fileEntries = fileProvider.GetDirectoryContents(folder);
+            var fileEntries = fileProvider.GetDirectoryContents("");
 
             return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
+            */
         }
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)
