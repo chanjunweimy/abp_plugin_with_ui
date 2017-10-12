@@ -10,7 +10,7 @@ using Microsoft.Extensions.Primitives;
 
 namespace Todo.MainProject.Web.Host.Services
 {
-    public class PluginEmbeddedResourceFileProvider : IFileProvider, IFileReader
+    public class PluginEmbeddedResourceFileProvider : IFileProvider
     {
         private readonly IIocResolver _iocResolver;
         private readonly Lazy<IEmbeddedResourceManager> _embeddedResourceManager;
