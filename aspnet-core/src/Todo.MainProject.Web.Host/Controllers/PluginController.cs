@@ -12,12 +12,12 @@ namespace Todo.MainProject.Web.Host.Controllers
     public class PluginController : MainProjectControllerBase
     {
         private readonly IPluginService _pluginService;
-        private readonly IFileProvider _fileProvider;
+        private readonly IPluginFileService _pluginFileService;
 
-        public PluginController(IPluginService pluginService, IFileProvider fileProvider)
+        public PluginController(IPluginService pluginService, IPluginFileService pluginFileService)
         {
             _pluginService = pluginService;
-            _fileProvider = fileProvider;
+            _pluginFileService = pluginFileService;
         }
 
         [HttpGet("api/[controller]/GetPluginObjectsResult")]
@@ -40,32 +40,19 @@ namespace Todo.MainProject.Web.Host.Controllers
             {
                 return null;
             }
-
-            var files = new List<FileContentResult>();
-            var filename = "calculator-plugin/index.html";
-            var fileBytes = System.IO.File.ReadAllBytes(filename);
-            var file = File(fileBytes, GetContentType(filename), Path.GetFileName(filename));
-            files.Add(file);
-            return files;
-            /*
-            var folder = plugin.Url.Replace("/", "");
-            var fileProvider = _pluginService.GetFileProvider(pluginName);
-            var fileEntries = fileProvider.GetDirectoryContents("");
-
+            var folder = plugin.Path.Replace("/", "");
+            var fileEntries = _pluginFileService.GetFilesFromProvider(folder);
             return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
-            */
         }
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)
         {
-            var filename = fileEntry.PhysicalPath;
-            if (filename == null)
-            {
-                return null;
-            }
-
-            var fileBytes = System.IO.File.ReadAllBytes(filename);
-            var file = File(fileBytes, GetContentType(filename), Path.GetFileName(filename));
+            var filename = fileEntry.Name;
+            var stream = fileEntry;
+            var memstream = new MemoryStream();
+            stream.CopyTo(memstream);
+            var fileBytes = memstream.ToArray();
+            var file = File(fileBytes, GetContentType(filename), filename);
             return file;
         }
 
@@ -93,8 +80,9 @@ namespace Todo.MainProject.Web.Host.Controllers
                 {".ico", "image/x-icon"},
                 {".js", "application/javascript"},
                 {".html", "text/html" },
-                {".css", "text/css" }
+                {".css", "text/css" },
+                {".zip", "application/zip" }
             };
-            }
+        }
     }
 }

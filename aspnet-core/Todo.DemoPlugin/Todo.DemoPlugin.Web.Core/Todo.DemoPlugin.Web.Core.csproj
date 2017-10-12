@@ -32,9 +32,6 @@
     <ProjectReference Include="..\Todo.DemoPlugin.Application\Todo.DemoPlugin.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="calculator-plugin\**\*;@(EmbeddedResource)" />
+    <EmbeddedResource Include="demoplugin.zip;@(EmbeddedResource)" />
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="mkdir $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns&#xD;&#xA;mkdir $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns\Todo.DemoPlugin&#xD;&#xA;copy $(ProjectDir)Todo.DemoPlugin.json $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns&#xD;&#xA;copy /Y $(TargetDir)Todo.DemoPlugin.* $(SolutionDir)src\Todo.MainProject.Web.Host\PlugIns\Todo.DemoPlugin" />
-  </Target>
 </Project>

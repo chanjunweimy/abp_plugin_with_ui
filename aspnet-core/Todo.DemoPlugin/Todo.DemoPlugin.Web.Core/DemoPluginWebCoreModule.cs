@@ -26,9 +26,9 @@ namespace Todo.DemoPlugin
                  );
             Configuration.EmbeddedResources.Sources.Add(
                 new EmbeddedResourceSet(
-                    "/calculator-plugin/",
+                    "",
                     Assembly.GetExecutingAssembly(),
-                    "Todo.DemoPlugin.calculator-plugin"
+                    "Todo.DemoPlugin"
                 )
             );
         }

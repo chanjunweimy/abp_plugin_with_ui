@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using Abp.AspNetCore;
 using Abp.Castle.Logging.Log4Net;
+using Abp.Dependency;
 using Todo.MainProject.Configuration;
 using Todo.MainProject.Identity;
 using Castle.Facilities.Logging;
@@ -15,7 +16,6 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Abp.Extensions;
 using Abp.PlugIns;
-using Abp.Resources.Embedded;
 using Todo.MainProject.Authentication.JwtBearer;
 using Todo.MainProject.Web.Host.Services;
 
@@ -98,11 +98,14 @@ namespace Todo.MainProject.Web.Host.Startup
                 options.OperationFilter<SecurityRequirementsOperationFilter>();
             });
 
+
+            services.AddSingleton<IPluginFileService>(new PluginFileService());
+
             //Configure Abp and Dependency Injection
             return services.AddAbp<MainProjectWebHostModule>(options =>
             {
                 //Configure Log4Net logging
-                options.IocManager.IocContainer.AddFacility<LoggingFacility>(
+                options.IocManager.IocContainer.AddFacility<LoggingFacility>( 
                     f => f.UseAbpLog4Net().WithConfig("log4net.config")
                 );
 
@@ -113,20 +116,18 @@ namespace Todo.MainProject.Web.Host.Startup
                 var pluginObjects = pluginService.GetPluginObjects();
                 foreach (var pluginObject in pluginObjects)
                 {
-                    options.PlugInSources.AddFolder(pluginObject.Path);
+                    options.PlugInSources.AddFolder(pluginService.GetPluginPath() + pluginObject.Path);
                 }
             });
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IPluginFileService pluginFileService)
         {
             app.UseAbp(); //Initializes ABP framework.
 
             app.UseCors(DefaultCorsPolicyName); //Enable CORS!
 
-            
             app.UseStaticFiles();
-            app.UseEmbeddedFiles();
 
             app.UseAuthentication();
             app.UseJwtTokenMiddleware();
@@ -156,6 +157,11 @@ namespace Todo.MainProject.Web.Host.Startup
                 options.InjectOnCompleteJavaScript("/swagger/ui/on-complete.js");
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "MainProject API V1");
             }); //URL: /swagger
+
+            var fileProvider = new PluginEmbeddedResourceFileProvider(
+                app.ApplicationServices.GetRequiredService<IIocResolver>()
+            );
+            pluginFileService.InjectFileProvider(fileProvider);
         }
 
 #if FEATURE_SIGNALR
