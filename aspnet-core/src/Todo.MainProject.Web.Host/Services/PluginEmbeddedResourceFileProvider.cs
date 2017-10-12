@@ -10,12 +10,13 @@ using Microsoft.Extensions.Primitives;
 
 namespace Todo.MainProject.Web.Host.Services
 {
-    public class PluginEmbeddedResourceFileProvider : IFileProvider
+    public class PluginEmbeddedResourceFileProvider : IFileReader
     {
         private readonly IIocResolver _iocResolver;
         private readonly Lazy<IEmbeddedResourceManager> _embeddedResourceManager;
         private readonly Lazy<IEmbeddedResourcesConfiguration> _configuration;
         private Dictionary<string, IDirectoryContents> _directoryContents;
+        private Dictionary<string, List<EmbeddedResourceItem>> _embeddedResourceItems;
         private bool _isInitialized;
 
         public PluginEmbeddedResourceFileProvider(IIocResolver iocResolver)
@@ -31,8 +32,7 @@ namespace Todo.MainProject.Web.Host.Services
                 true
             );
             _directoryContents = null;
-
-
+            _embeddedResourceItems = null;
         }
 
         public IFileInfo GetFileInfo(string subpath)
@@ -42,7 +42,7 @@ namespace Todo.MainProject.Web.Host.Services
                 return new NotFoundFileInfo(subpath);
             }
 
-            var resource = _embeddedResourceManager.Value.GetResource(subpath);
+            var resource = GetFileEmbeddedResourceItem(subpath);
 
             if (resource == null || IsIgnoredFile(resource))
             {
@@ -50,6 +50,29 @@ namespace Todo.MainProject.Web.Host.Services
             }
 
             return new EmbeddedResourceItemFileInfo(resource);
+        }
+
+        public EmbeddedResourceItem GetFileEmbeddedResourceItem(string subpath)
+        {
+            if (!IsInitialized())
+            {
+                return null;
+            }
+            var resource = _embeddedResourceManager.Value.GetResource(subpath);
+            if (IsIgnoredFile(resource))
+            {
+                return null;
+            }
+            return resource;
+        }
+
+        public List<EmbeddedResourceItem> GetFileEmbeddedResourceItems(string subpath)
+        {
+            if (!IsInitialized())
+            {
+                return null;
+            }
+            return GetEmbeddedResourceItems(subpath);
         }
 
         /// <summary>
@@ -91,6 +114,43 @@ namespace Todo.MainProject.Web.Host.Services
 
             _isInitialized = _iocResolver.IsRegistered<IEmbeddedResourceManager>() && _iocResolver.IsRegistered<IEmbeddedResourcesConfiguration>();
             return _isInitialized;
+        }
+
+        private List<EmbeddedResourceItem> GetEmbeddedResourceItems(string pluginName)
+        {
+            if (_directoryContents == null)
+            {
+                _embeddedResourceItems = CreateEmbeddedResourceItems();
+            }
+
+            if (!_embeddedResourceItems.ContainsKey(pluginName))
+            {
+                return null;
+            }
+            return _embeddedResourceItems[pluginName];
+        }
+
+        private Dictionary<string, List<EmbeddedResourceItem>> CreateEmbeddedResourceItems()
+        {
+            var embeddedResourceItems = new Dictionary<string, List<EmbeddedResourceItem>>(StringComparer.OrdinalIgnoreCase);
+
+            foreach (var source in _configuration.Value.Sources)
+            {
+                var files = new List<EmbeddedResourceItem>();
+                foreach (var resourceName in source.Assembly.GetManifestResourceNames())
+                {
+                    if (!resourceName.StartsWith(source.ResourceNamespace))
+                    {
+                        continue;
+                    }
+                    var filePath = source.RootPath + ConvertToRelativePath(source, resourceName);
+                    var file = GetFileEmbeddedResourceItem(filePath);
+                    files.Add(file);
+                }
+                embeddedResourceItems.Add(source.ResourceNamespace, files);
+            }
+
+            return embeddedResourceItems;
         }
 
         private IDirectoryContents GetPluginDirectoryContents(string pluginName)

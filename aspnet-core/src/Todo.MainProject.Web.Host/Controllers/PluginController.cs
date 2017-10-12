@@ -41,17 +41,35 @@ namespace Todo.MainProject.Web.Host.Controllers
                 return null;
             }
             var folder = plugin.Path.Replace("/", "");
-            var fileEntries = _pluginFileService.GetFilesFromProvider(folder);
-            return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
+            var fileEntries = _pluginFileService.ReadFilesFromReader(folder);
+            var files = new List<FileContentResult>();
+            foreach (var fileEntry in fileEntries)
+            {
+                var file = LoadFileFromByteArray(fileEntry.FileName, fileEntry.Content);
+                files.Add(file);
+            }
+            return files;
+
+            //return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
         }
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)
         {
             var filename = fileEntry.Name;
-            var stream = fileEntry;
+            var stream = fileEntry.CreateReadStream();
+            return LoadFileFromStream(stream, filename);
+        }
+
+        private FileContentResult LoadFileFromStream(Stream stream, string filename)
+        {
             var memstream = new MemoryStream();
             stream.CopyTo(memstream);
             var fileBytes = memstream.ToArray();
+            return LoadFileFromByteArray(filename, fileBytes);
+        }
+
+        private FileContentResult LoadFileFromByteArray(string filename, byte[] fileBytes)
+        {
             var file = File(fileBytes, GetContentType(filename), filename);
             return file;
         }
