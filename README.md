@@ -1,5 +1,5 @@
 # Plugin Architecture via Abp and Angular4+
-This repository works on building a plugin architecture using ASP.NET boilerplate framework and angular 4+.
+This repository works on building a plugin architecture using ASP.NET boilerplate framework and angular 4+. It is the implementation of my idea discussed in this [thread](https://github.com/aspnetboilerplate/aspnetboilerplate/issues/1476)
 
 ### How it works
 1. The backend (Host) plugin architecture system made use of the ASP.NET Boilerplate template.
