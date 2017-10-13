@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Todo.MainProject.Web.Host.Services.Dto;
+using Todo.MainProject.Communication.Dto;
 
 namespace Todo.MainProject.Web.Host.Services
 {

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using Abp.Resources.Embedded;
-using Microsoft.Extensions.FileProviders;
+﻿using Microsoft.Extensions.FileProviders;
 
 namespace Todo.MainProject.Web.Host.Services
 {

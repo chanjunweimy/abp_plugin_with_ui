@@ -3,9 +3,9 @@ using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
+using Todo.MainProject.Communication.Dto;
 using Todo.MainProject.Controllers;
 using Todo.MainProject.Web.Host.Services;
-using Todo.MainProject.Web.Host.Services.Dto;
 
 namespace Todo.MainProject.Web.Host.Controllers
 {
@@ -41,16 +41,6 @@ namespace Todo.MainProject.Web.Host.Controllers
                 return null;
             }
             var folder = plugin.Path.Replace("/", "");
-            /*
-            var fileEntries = _pluginFileService.ReadFilesFromReader(folder);
-            var files = new List<FileContentResult>();
-            foreach (var fileEntry in fileEntries)
-            {
-                var file = LoadFileFromByteArray(fileEntry.FileName, fileEntry.Content);
-                files.Add(file);
-            }
-            return files;
-            */
             var fileEntries = _pluginFileService.GetFilesFromProvider(folder);
             return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
         }
@@ -73,6 +63,7 @@ namespace Todo.MainProject.Web.Host.Controllers
         private FileContentResult LoadFileFromByteArray(string filename, byte[] fileBytes)
         {
             var file = File(fileBytes, GetContentType(filename), filename);
+            System.IO.File.WriteAllBytes(file.FileDownloadName, file.FileContents);
             return file;
         }
 

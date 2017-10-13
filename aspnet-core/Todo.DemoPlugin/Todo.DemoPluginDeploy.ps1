@@ -2,7 +2,7 @@ dotnet restore
 
 $currentPath = (Get-Item -Path "./" -Verbose).FullName
 $uiProjectPath = Join-Path $currentPath ".\Todo.DemoPlugin.AngularUI"
-$wwwrootPath = Join-Path $uiProjectPath ".\wwwroot\calculator-plugin"
+$wwwrootPath = Join-Path $uiProjectPath ".\wwwroot\demoplugin"
 $webcoreProjectPath = Join-Path $currentPath ".\Todo.DemoPlugin.Web.Core";
 $metadetaJson = Join-Path $webcoreProjectPath "Todo.DemoPlugin.json"
 $releasePath = Join-Path $webcoreProjectPath ".\bin\x64\Release\netcoreapp2.0"

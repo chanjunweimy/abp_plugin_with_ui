@@ -15,8 +15,6 @@ namespace Todo.MainProject.Web.Host.Services
         private readonly IIocResolver _iocResolver;
         private readonly Lazy<IEmbeddedResourceManager> _embeddedResourceManager;
         private readonly Lazy<IEmbeddedResourcesConfiguration> _configuration;
-        private Dictionary<string, IDirectoryContents> _directoryContents;
-        private Dictionary<string, List<EmbeddedResourceItem>> _embeddedResourceItems;
         private bool _isInitialized;
 
         public PluginEmbeddedResourceFileProvider(IIocResolver iocResolver)
@@ -31,8 +29,6 @@ namespace Todo.MainProject.Web.Host.Services
                 () => iocResolver.Resolve<IEmbeddedResourcesConfiguration>(),
                 true
             );
-            _directoryContents = null;
-            _embeddedResourceItems = null;
         }
 
         public IFileInfo GetFileInfo(string subpath)
@@ -109,42 +105,25 @@ namespace Todo.MainProject.Web.Host.Services
 
         private IDirectoryContents GetPluginDirectoryContents(string pluginName)
         {
-            if (_directoryContents == null)
-            {
-                _directoryContents = CreateDirectoryContents();
-            }
-
-            if (!_directoryContents.ContainsKey(pluginName))
+            var source = _configuration.Value.Sources.FirstOrDefault(s => s.ResourceNamespace.Equals(pluginName));
+            if (source == null)
             {
                 return new NotFoundDirectoryContents();
             }
-            return _directoryContents[pluginName];
-        }
-
-        private Dictionary<string, IDirectoryContents> CreateDirectoryContents()
-        {
-            var directoryContents = new Dictionary<string, IDirectoryContents>(StringComparer.OrdinalIgnoreCase);
-
-            foreach (var source in _configuration.Value.Sources)
+            var fileInfos = new List<IFileInfo>();
+            foreach (var resourceName in source.Assembly.GetManifestResourceNames())
             {
-                var fileInfos = new List<IFileInfo>();
-                foreach (var resourceName in source.Assembly.GetManifestResourceNames())
+                if (!resourceName.StartsWith(source.ResourceNamespace))
                 {
-                    if (!resourceName.StartsWith(source.ResourceNamespace))
-                    {
-                        continue;
-                    }
-                    var filePath = source.RootPath + ConvertToRelativePath(source, resourceName);
-                    var fileInfo = GetFileInfo(filePath);
-                    fileInfos.Add(fileInfo);
+                    continue;
                 }
-                IDirectoryContents directoryContent = new PluginEmbeddedDirectoryContents(fileInfos.GetEnumerator());
-                directoryContents.Add(source.ResourceNamespace, directoryContent);
+                var filePath = source.RootPath + ConvertToRelativePath(source, resourceName);
+                var fileInfo = GetFileInfo(filePath);
+                fileInfos.Add(fileInfo);
             }
-
+            IDirectoryContents directoryContents = new PluginEmbeddedDirectoryContents(fileInfos.GetEnumerator());
             return directoryContents;
         }
-
 
         private string ConvertToRelativePath(EmbeddedResourceSet source, string resourceName)
         {

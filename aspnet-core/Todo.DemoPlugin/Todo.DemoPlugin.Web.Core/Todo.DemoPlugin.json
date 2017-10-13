@@ -1,5 +1,6 @@
 ﻿{
   "Title": "DemoPlugin",
   "Path": "/Todo.DemoPlugin",
-  "Url": "/demoplugin"
+  "Url": "/demoplugin",
+  "Version": "1.0.0"
 }

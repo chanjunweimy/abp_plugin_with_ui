@@ -21,11 +21,9 @@
     <None Update="wwwroot\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
-    <None Update="PlugIns\**\*">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Todo.MainProject.Communication\Todo.MainProject.Communication.csproj" />
     <ProjectReference Include="..\Todo.MainProject.Web.Core\Todo.MainProject.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>

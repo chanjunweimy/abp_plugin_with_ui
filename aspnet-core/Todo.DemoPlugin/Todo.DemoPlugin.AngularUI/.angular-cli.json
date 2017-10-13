@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "calculatorplugin"
+    "name": "demoplugin"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "wwwroot/calculator-plugin",
+      "outDir": "wwwroot/demoplugin",
       "assets": [
         "assets",
         "favicon.ico"
