@@ -7,17 +7,21 @@ This repository works on building a plugin architecture using ASP.NET boilerplat
 3. Has Powershell available.
 
 ### Quick Start
-#### Website without Plugin
-##### Run the Host
-    1. Navigate to ``/aspnet-core`` and open ``Todo.MainProject.sln``
-    2. Set ``/src/Todo.MainProject.Web.Host`` as StartUp project
-    3. ****[First time only]** Open ``Package Manager Console`` and run ``Update-Database`` command to create your database (ensure that Default project is selected as ``Todo.MainProject.EntityFrameworkCore`` in the Package Manager Console window).
-    4. Build & Run.
-##### Run the UI
-    1. Navigate to ``/angular`` and open a ``powershell``
-    2. ****[First time only]** Run ``Yarn``
-    3. Run ``ng build --prod``, then Run ``dotnet run``
-    4. Open your browser and navigate to [http://localhost:4200](http://localhost:4200)
+
+#### Run the Host
+
+1. Navigate to ``/aspnet-core`` and open ``Todo.MainProject.sln``
+2. Set ``/src/Todo.MainProject.Web.Host`` as StartUp project
+3. ****[First time only]** Open ``Package Manager Console`` and run ``Update-Database`` command to create your database (ensure that Default project is selected as ``Todo.MainProject.EntityFrameworkCore`` in the Package Manager Console window).
+4. Build & Run.
+
+#### Run the UI
+
+1. Navigate to ``/angular`` and open a ``powershell``
+2. ****[First time only]** Run ``Yarn``
+3. Run ``ng build --prod``, then Run ``dotnet run``
+4. Open your browser and navigate to [http://localhost:4200](http://localhost:4200)
+    
 #### Website with Plugin
 1. Setup the project once: Ran ``Update-Database`` and ``Yarn``
 2. Run ``addPlugin.ps1`` located in the root level.
