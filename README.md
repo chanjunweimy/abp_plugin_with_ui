@@ -25,7 +25,7 @@ This repository works on building a plugin architecture using ASP.NET boilerplat
 #### Website with Plugin
 1. Setup the project once: Ran ``Update-Database`` and ``Yarn``
 2. Run ``addPlugin.ps1`` located in the root level.
-3. Now [Run the Host](README.md#Run-the-Host) then [Run the UI](README.md#Run-the-UI)
+3. Now [Run the Host](README.md#run-the-host) then [Run the UI](README.md#run-the-ui)
 
 ### How it works
 1. The backend (Host) plugin architecture system made use of the ASP.NET Boilerplate template.
