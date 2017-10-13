@@ -32,6 +32,6 @@
     <ProjectReference Include="..\Todo.DemoPlugin.Application\Todo.DemoPlugin.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="demoplugin.zip;@(EmbeddedResource)" />
+    <EmbeddedResource Include="*.zip;@(EmbeddedResource)" />
   </ItemGroup>
 </Project>

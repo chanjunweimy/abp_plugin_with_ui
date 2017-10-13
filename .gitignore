@@ -8,3 +8,5 @@ aspnet-core/src/Todo.MainProject.Web.Host/App_Data/Logs/
 aspnet-core/src/Todo.MainProject.Web.Mvc/App_Data/Logs/
 wwwroot/
 *.user
+*.zip
+downloader/
