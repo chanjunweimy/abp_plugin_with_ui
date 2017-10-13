@@ -41,6 +41,7 @@ namespace Todo.MainProject.Web.Host.Controllers
                 return null;
             }
             var folder = plugin.Path.Replace("/", "");
+            /*
             var fileEntries = _pluginFileService.ReadFilesFromReader(folder);
             var files = new List<FileContentResult>();
             foreach (var fileEntry in fileEntries)
@@ -49,8 +50,9 @@ namespace Todo.MainProject.Web.Host.Controllers
                 files.Add(file);
             }
             return files;
-
-            //return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
+            */
+            var fileEntries = _pluginFileService.GetFilesFromProvider(folder);
+            return fileEntries.Select(LoadFileFromPath).Where(file => file != null).ToList();
         }
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)

@@ -6,17 +6,11 @@ namespace Todo.MainProject.Web.Host.Services
 {
     public class PluginFileService : IPluginFileService
     {
-        private IFileReader _fileReader;
+        private IFileProvider _fileReader;
 
         public PluginFileService()
         {
             _fileReader = null;
-        }
-
-        public List<EmbeddedResourceItem> ReadFilesFromReader(string path)
-        {
-            var contents = _fileReader.GetFileEmbeddedResourceItems(path);
-            return contents;
         }
 
         public IDirectoryContents GetFilesFromProvider(string path)
@@ -25,7 +19,7 @@ namespace Todo.MainProject.Web.Host.Services
             return contents;
         }
 
-        public void InjectFileProvider(IFileReader fileReader)
+        public void InjectFileProvider(IFileProvider fileReader)
         {
             _fileReader = fileReader;
         }

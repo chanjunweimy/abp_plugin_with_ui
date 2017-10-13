@@ -10,9 +10,8 @@ namespace Todo.MainProject.Web.Host.Services
         /// Important to initialize the service.
         /// </summary>
         /// <param name="fileProvider"></param>
-        void InjectFileProvider(IFileReader fileProvider);
+        void InjectFileProvider(IFileProvider fileProvider);
 
         IDirectoryContents GetFilesFromProvider(string path);
-        List<EmbeddedResourceItem> ReadFilesFromReader(string path);
     }
 }
