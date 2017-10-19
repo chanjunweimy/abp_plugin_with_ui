@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.AngularUI", "Todo.DemoPlugin.AngularUI\Todo.DemoPlugin.AngularUI.csproj", "{32BA7268-AFE3-431E-A757-7388A37F7420}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.Application", "Todo.DemoPlugin.Application\Todo.DemoPlugin.Application.csproj", "{2A70E0D9-6C0E-40BE-9191-F07FD5296C63}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.DemoPlugin.Web.Core", "Todo.DemoPlugin.Web.Core\Todo.DemoPlugin.Web.Core.csproj", "{C356C8B7-6561-4F20-BD79-1A9B2D0BEA90}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32BA7268-AFE3-431E-A757-7388A37F7420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32BA7268-AFE3-431E-A757-7388A37F7420}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32BA7268-AFE3-431E-A757-7388A37F7420}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32BA7268-AFE3-431E-A757-7388A37F7420}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2A70E0D9-6C0E-40BE-9191-F07FD5296C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2A70E0D9-6C0E-40BE-9191-F07FD5296C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A70E0D9-6C0E-40BE-9191-F07FD5296C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
