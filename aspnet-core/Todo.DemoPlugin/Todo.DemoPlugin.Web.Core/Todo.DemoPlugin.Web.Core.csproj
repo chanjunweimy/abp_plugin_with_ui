@@ -32,6 +32,21 @@
     <ProjectReference Include="..\Todo.DemoPlugin.Application\Todo.DemoPlugin.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="*.zip;@(EmbeddedResource)" />
+    <EmbeddedResource Include="src/app/demoplugin/**/*.*;@(EmbeddedResource)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".editorconfig" />
+    <None Remove=".gitignore" />
+    <None Remove="npm-shrinkwrap.json" />
+    <None Remove="yarn.lock" />
+    <None Remove=".angular-cli.json" />
+    <None Remove="package.json" />
+    <None Remove="*.conf.js" />
+    <None Remove="tsconfig.json" />
+    <None Remove="tslint.json" />
+    <None Remove="node_modules/**/*" />
+    <None Remove="e2e/**/*" />
+    <Compile Remove="node_modules/**/*" />
+    <Compile Remove="e2e/**/*" />
   </ItemGroup>
 </Project>
