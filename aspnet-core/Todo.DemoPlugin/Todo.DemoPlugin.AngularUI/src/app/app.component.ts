@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
+import { EagerComponent } from './eager.component';
 
 @Component({
   selector: 'app-root',
@@ -7,25 +9,19 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DemoPlugin';
-  x = 0;
-  y = 0;
-  answer = { values : 0 };
+  headerItems: Object[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private router: Router) {
+    const routes = [
+      {path: '', redirectTo: '/eager', pathMatch: 'full'},
+      {path: 'eager', component: EagerComponent},
+      {path: 'demoplugin', loadChildren: './demoplugin/demoplugin.module#DemoPluginModule'}
+    ];
 
-  onKeyX(event: any) {
-    this.x = Number(event.target.value);
-  }
-
-  onKeyY(event: any) {
-    this.y = Number(event.target.value);
-  }
-
-  onClickAdd() {
-    this.http.post('http://localhost:21021/api/services/app/CalculationService/Calculation_Add?x=' + this.x + '&y=' + this.y, {})
-      .subscribe(data => {
-        this.answer.values = data['result'];
-      });
+    this.headerItems.push(
+      { classes: 'navLink', routerLink: 'eager', text: 'Eager' },
+      { classes: 'navLink', routerLink: 'demoplugin', text: 'DemoPlugin' }
+    );
+    this.router.resetConfig(routes);
   }
 }
