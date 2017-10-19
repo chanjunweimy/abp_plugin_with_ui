@@ -92,7 +92,8 @@ namespace Todo.MainProject.Web.Host.Controllers
                 {".js", "application/javascript"},
                 {".html", "text/html" },
                 {".css", "text/css" },
-                {".zip", "application/zip" }
+                {".zip", "application/zip" },
+                {".ts", "application/x-typescript" }
             };
         }
     }

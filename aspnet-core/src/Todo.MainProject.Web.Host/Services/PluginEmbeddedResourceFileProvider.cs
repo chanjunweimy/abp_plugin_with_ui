@@ -135,9 +135,24 @@ namespace Todo.MainProject.Web.Host.Services
                 return resourceName;
             }
 
-            var folder = pathParts.Take(pathParts.Length - 2).Select(NormalizeFolderName).JoinAsString("/");
-            var fileName = pathParts[pathParts.Length - 2] + "." + pathParts[pathParts.Length - 1];
-
+            string folder;
+            string fileName;
+            if (resourceName.Contains(".module") ||
+                resourceName.Contains(".component") ||
+                resourceName.Contains(".routing") ||
+                resourceName.Contains(".directive") ||
+                resourceName.Contains(".service"))
+            {
+                folder = pathParts.Take(pathParts.Length - 3).Select(NormalizeFolderName).JoinAsString("/");
+                fileName = pathParts[pathParts.Length - 3] + "." + 
+                            pathParts[pathParts.Length - 2] + "." + 
+                            pathParts[pathParts.Length - 1];
+            }
+            else
+            {
+                folder = pathParts.Take(pathParts.Length - 2).Select(NormalizeFolderName).JoinAsString("/");
+                fileName = pathParts[pathParts.Length - 2] + "." + pathParts[pathParts.Length - 1];
+            }
             return folder + "/" + fileName;
         }
 
