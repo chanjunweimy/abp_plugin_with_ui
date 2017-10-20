@@ -8,13 +8,19 @@ namespace Todo.PluginDownloader
     {
         static void Main(string[] args)
         {
-            Execute(args);
+            ExecuteSource(args);
         }
 
-        public static void Execute(string[] args)
+        public static void ExecuteZip(string[] args)
         {
             var program = new PluginHandler();
-            program.Execute(args);
+            program.ExecuteZip(args);
+        }
+
+        public static void ExecuteSource(string[] args)
+        {
+            var program = new PluginHandler();
+            program.ExecuteSource(args);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.IO.Compression;
 using System.Threading.Tasks;
+using Todo.MainProject.Communication.Dto;
 
 namespace Todo.PluginDownloader
 {
@@ -21,12 +22,18 @@ namespace Todo.PluginDownloader
 
         public PluginHandler(string[] args)
         {
-            initializePluginHandler(args);
+            InitializePluginHandler(args);
         }
 
-        public void Execute(string[] args)
+        public void ExecuteZip(string[] args)
         {
-            initializePluginHandler(args);
+            _rootSavePath = "wwwroot/";
+            InitializePluginHandler(args);
+            DownloadPlugins().GetAwaiter().GetResult();
+        }
+
+        public void ExecuteSource(string[] args)
+        {
             DownloadPlugins().GetAwaiter().GetResult();
         }
 
@@ -40,7 +47,10 @@ namespace Todo.PluginDownloader
                 var fileContentResults = await pluginDownloader.GetFileContentResults(_pluginDownloadPath, pluginName);
                 foreach (var fileContentResult in fileContentResults)
                 {
-                    var saveFilePath = Path.Combine(_rootSavePath, fileContentResult.FileDownloadName);
+                    var filenameObject = new FilenameObject(fileContentResult.FileDownloadName);
+                    var saveFileRoot = RecursiveCreateDirectory(filenameObject.PhysicalPath);
+
+                    var saveFilePath = Path.Combine(saveFileRoot, filenameObject.FileName);
                     File.WriteAllBytes(saveFilePath, fileContentResult.FileContents);
                     if (File.Exists(saveFilePath) && saveFilePath.EndsWith(".zip"))
                     {
@@ -56,13 +66,41 @@ namespace Todo.PluginDownloader
             }
         }
 
-        private void initializePluginHandler(string[] args)
+        private void InitializePluginHandler(string[] args)
         {
-            _rootSavePath = Path.GetFullPath(_rootSavePath);
-            if (!Directory.Exists(_rootSavePath))
+            CreateIfNotExist(_rootSavePath);
+        }
+
+        private string RecursiveCreateDirectory(string path)
+        {
+            var folders = path.Split("/");
+            var createdPath = "";
+            var finalDirectory = "";
+            foreach (var folder in folders)
             {
-                Directory.CreateDirectory(_rootSavePath);
+                var folderName = folder.Trim();
+                if (string.IsNullOrEmpty(folderName))
+                {
+                    continue;
+                }
+                if (folderName == "app")
+                {
+                    folderName = "plugins";
+                }
+                createdPath += folderName + "/";
+                finalDirectory = CreateIfNotExist(createdPath);
             }
+            return finalDirectory;
+        }
+
+        private string CreateIfNotExist(string folder)
+        {
+            folder = Path.GetFullPath(folder);
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+            return folder;
         }
     }
 }

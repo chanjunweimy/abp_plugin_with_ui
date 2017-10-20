@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Text;
 using Abp.Collections.Extensions;
 using Abp.Resources.Embedded;
-using Todo.MainProject.Web.Host.Services.Dto;
+using Todo.MainProject.Communication.Dto;
 
 namespace Todo.MainProject.Web.Host.Services
 {

@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Todo.MainProject.Web.Host.Services.Dto
+namespace Todo.MainProject.Communication.Dto
 {
     public class FilenameObject
     {
