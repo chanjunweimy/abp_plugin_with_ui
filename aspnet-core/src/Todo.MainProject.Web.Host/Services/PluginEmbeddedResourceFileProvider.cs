@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Abp.AspNetCore.EmbeddedResources;
-using Abp.Collections.Extensions;
 using Abp.Dependency;
 using Abp.Resources.Embedded;
 using Microsoft.Extensions.FileProviders;
@@ -45,7 +43,7 @@ namespace Todo.MainProject.Web.Host.Services
                 return new NotFoundFileInfo(subpath);
             }
 
-            return new EmbeddedResourceItemFileInfo(resource);
+            return new PluginEmbeddedResourceItemFileInfo(resource, subpath);
         }
 
         private EmbeddedResourceItem GetFileEmbeddedResourceItem(string subpath)
@@ -117,49 +115,12 @@ namespace Todo.MainProject.Web.Host.Services
                 {
                     continue;
                 }
-                var filePath = source.RootPath + ConvertToRelativePath(source, resourceName);
+                var filePath = source.RootPath + PathHelper.ConvertToRelativePath(source, resourceName);
                 var fileInfo = GetFileInfo(filePath);
                 fileInfos.Add(fileInfo);
             }
             IDirectoryContents directoryContents = new PluginEmbeddedDirectoryContents(fileInfos.GetEnumerator());
             return directoryContents;
-        }
-
-        private string ConvertToRelativePath(EmbeddedResourceSet source, string resourceName)
-        {
-            resourceName = resourceName.Substring(source.ResourceNamespace.Length + 1);
-
-            var pathParts = resourceName.Split('.');
-            if (pathParts.Length <= 2)
-            {
-                return resourceName;
-            }
-
-            string folder;
-            string fileName;
-            if (resourceName.Contains(".module") ||
-                resourceName.Contains(".component") ||
-                resourceName.Contains(".routing") ||
-                resourceName.Contains(".directive") ||
-                resourceName.Contains(".service"))
-            {
-                folder = pathParts.Take(pathParts.Length - 3).Select(NormalizeFolderName).JoinAsString("/");
-                fileName = pathParts[pathParts.Length - 3] + "." + 
-                            pathParts[pathParts.Length - 2] + "." + 
-                            pathParts[pathParts.Length - 1];
-            }
-            else
-            {
-                folder = pathParts.Take(pathParts.Length - 2).Select(NormalizeFolderName).JoinAsString("/");
-                fileName = pathParts[pathParts.Length - 2] + "." + pathParts[pathParts.Length - 1];
-            }
-            return folder + "/" + fileName;
-        }
-
-        private static string NormalizeFolderName(string pathPart)
-        {
-            //TODO: Implement all rules of .NET
-            return pathPart.Replace('-', '_');
         }
     }
 }

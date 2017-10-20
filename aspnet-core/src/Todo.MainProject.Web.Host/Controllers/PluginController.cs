@@ -47,7 +47,7 @@ namespace Todo.MainProject.Web.Host.Controllers
 
         private FileContentResult LoadFileFromPath(IFileInfo fileEntry)
         {
-            var filename = fileEntry.Name;
+            var filename = fileEntry.PhysicalPath + "/" + fileEntry.Name;
             var stream = fileEntry.CreateReadStream();
             return LoadFileFromStream(stream, filename);
         }
@@ -63,7 +63,7 @@ namespace Todo.MainProject.Web.Host.Controllers
         private FileContentResult LoadFileFromByteArray(string filename, byte[] fileBytes)
         {
             var file = File(fileBytes, GetContentType(filename), filename);
-            System.IO.File.WriteAllBytes(file.FileDownloadName, file.FileContents);
+            //System.IO.File.WriteAllBytes(file.FileDownloadName, file.FileContents);
             return file;
         }
 
