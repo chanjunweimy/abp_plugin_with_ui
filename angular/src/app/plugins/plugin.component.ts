@@ -31,7 +31,7 @@ export class PluginComponent extends AppComponentBase implements OnInit {
         //this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.item.url);
         //this.download = true; // show iframe
 
-        SystemJS.load('plugins/demoplugin/demoplugin.module').then(module => {
+        SystemJS.import('plugins/demoplugin/demoplugin.module.ts').then(module => {
             const mod = module;
             console.log(mod);
             /*
