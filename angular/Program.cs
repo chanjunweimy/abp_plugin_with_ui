@@ -30,7 +30,7 @@ namespace Todo.MainProject.AngularUI
 
             var downloaderAssembly = Assembly.LoadFrom(Path.GetFullPath(downloaderPath));
             var type = downloaderAssembly.GetType("Todo.PluginDownloader.Program");
-            var m = type.GetMethod("Execute");
+            var m = type.GetMethod("ExecuteSource");
             m.Invoke(null, new object[] {args});
         }
 
